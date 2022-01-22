@@ -1,9 +1,10 @@
 
-# Structure Predictor
+# Prediction of noncentrosymmetric materials
+#### Yuqi Song
 
 ## Manual
 
-### Background on Data Mined Crystal Structure and Compound Prediction
+### Background on noncentrosymmetric optical materials Prediction
 
 Crystal structure and compound prediction is an essential step of computational materials
 design.
