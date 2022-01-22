@@ -57,31 +57,19 @@ _Figure 3: Procedure for proposing new compound candidates in a quaternary syste
 
 ### Performance and Limitations
 
-### Using the Structure Predictor
+### Using the Pauling's Rule Check Tool
 
 #### Entering Inputs
 
 Practically, the procedure for getting predictions consists in 3 steps
 
-1. Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in.
-   For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.
+1. Enter a formula/composition
 
-2. Pick oxidation states: The model uses the oxidation states to make predictions.
-   V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O.
-   Sometimes you do not know what oxidation states you are interest in.
-   Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn.
-   Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>.
-   This should cover all the chemical space you are looking at.
+2. or upload a cif structure file
 
-3. Start the prediction: click 'Predict Structure' to begin the prediction.
-   Predictions are not immediately available and will require some time to complete.
-   You can monitor the status of your request in the [dashboard](https://materialsproject.org/dashboard).
-
-4. Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures.
-   We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters.
-   We do not provide any DFT results due our limited computational budget for the moment.
-   It is the responsibility of the user to run the predictions.
-   Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.
+3. Start the prediction: click 'Check Now' to begin the validation process.
+   
+4. Examine results: Upon completion of the task, you will be given a link to 
 
 #### Interpreting the Results
 
