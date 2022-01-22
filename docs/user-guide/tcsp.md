@@ -8,7 +8,7 @@
 Crystal structure prediction is an essential step of computational materials design or discovery. While many materials properties can be computed nowadays with _ab-initio_ computations, they usually requires the availability of the crystal structures. Those computed properties are only meaningful if they are evaluated on a compound (i.e., a stoichiometry and crystal structure) stable enough to be formed. Crystal structure prediction can be useful for experimentalists too.
 For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.
 
-The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. [^1]
+The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. [^2]
 Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions). This optimization is extremely challenging as the energy landscape is very rugged and full of local minima and the energy evaluation using DFT is very computationally expensive and slow. Advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem. TCSP chooses a simpler but much faster approach for crystal structure prediction using template based element subsitition. A related work is the paper in [^3]
 
 ### The Template/Substitution based Structure Prediction Method
@@ -123,5 +123,7 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### References
 [^1]: Wei, Lai, Nihang Fu, Edirisuriya Siriwardane, Wenhui Yang, Sadman Sadeed Omee, Rongzhi Dong, Rui Xin, and Jianjun Hu. "TCSP: a Template based crystal structure prediction algorithm and web server for materials discovery." arXiv preprint arXiv:2111.14049 (2021).
+
 [^2]: Glass, Colin W., Artem R. Oganov, and Nikolaus Hansen. "USPEX—Evolutionary crystal structure prediction." Computer physics communications 175, no. 11-12 (2006): 713-720.
+
 [^3]: G. Hautier, V. Ehrlacher, C.C. Fischer, A. Jain, G. Ceder, Data Mined Ionic Substitutions for the Discovery of New Compounds, Inorganic Chemistry, vol. 50, 2011, pp. 656-663.
