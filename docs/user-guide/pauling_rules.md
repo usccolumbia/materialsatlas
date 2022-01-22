@@ -33,7 +33,9 @@ For instance, when only powder XRD experiments are available after synthesis of 
 
 ### The Method
 
-The Pauling's rule check tool here is implemented using the method as described in the paper "George, Janine, David Waroquiers, Davide Di Stefano, Guido Petretto, Gian‐Marco Rignanese, and Geoffroy Hautier. "The limited predictive power of the pauling rules." Angewandte Chemie 132, no. 19 (2020): 7639-7645". 
+The Pauling's rule check tool for structures here is implemented using the method as described in the paper "George, Janine, David Waroquiers, Davide Di Stefano, Guido Petretto, Gian‐Marco Rignanese, and Geoffroy Hautier. "The limited predictive power of the pauling rules." Angewandte Chemie 132, no. 19 (2020): 7639-7645". 
+
+The composition based Pauling rule check is implemented using the [Smact](https://smact.readthedocs.io/en/stable/_modules/smact/screening.html#pauling_test) package which can check if a combination of ions makes chemical sense, (i.e. positive ions should be of lower Pauling electronegativity)
 
 ### The basic idea
 
