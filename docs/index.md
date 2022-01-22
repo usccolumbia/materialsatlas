@@ -3,7 +3,7 @@
 
 
 This is a place for all documentation relating to the
-[MaterialsAtlas](https://materialsAtlas.org) (MA), encompassing:
+[MaterialsAtlas](http://materialsAtlas.org) (MA), encompassing:
 
 - Foundation: concepts in materials and computer science we use to structure
   and interpret our data sets
