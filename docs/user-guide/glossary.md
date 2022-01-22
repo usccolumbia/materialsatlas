@@ -4,6 +4,9 @@
 
 ## Formula
 
+## Composition
+In MaterialsAtlas, the composition and formula are interchangable terms.
+
 **Anonymous chemical formula:**
 The chemical formula with the element names anonymized to the letters A, B, C, etc.
 The order of the anonymized elements is from least atomic fraction to greatest atomic fraction, thus the coefficients are non-decreasing.
