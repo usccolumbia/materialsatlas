@@ -25,7 +25,7 @@ The basic idea is to learn the chemical rules governing phase stability from a d
 Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
 Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
 
-### The Ionic Substitution based Structure Prediction Method
+### The Template/Substitution based Structure Prediction Method
 
 The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
 In this section we will briefly explain the idea of the approach and how to use the explorer.
