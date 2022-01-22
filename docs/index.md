@@ -13,7 +13,7 @@ This is a place for all documentation relating to the
   application programming interface (API), and codebases.
 - Contribution: Developer guides and design specifications
 
-If you notice an error or omission, please post an [issue](https://github.com/uscolumbia/materialsatlas/issues/new) or click a pencil icon
+If you notice an error or omission, please post an [issue](https://github.com/usccolumbia/materialsatlas/issues/new) or click a pencil icon
 (<span class="md-icon" style="color:grey">edit</span>) on a page to suggest an
 edit to us.
 
