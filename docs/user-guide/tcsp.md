@@ -1,10 +1,11 @@
-# Structure Predictor
+# TCSP: Template based Crystal Structure Predictor
+#### By Lai Wei (魏莱)
 
 ## Manual
 
-### Background on Data Mined Crystal Structure and Compound Prediction
+### Background on Template based Crystal Structure Prediction
 
-Crystal structure and compound prediction is an essential step of computational materials
+Crystal structure prediction is an essential step of computational materials
 design.
 Indeed, while many materials properties can be computed nowadays with _ab-initio_
 computations.
