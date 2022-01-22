@@ -1,9 +1,9 @@
 
-# Structure Predictor
+# Space group and Crystal Systems Predictor
 
 ## Manual
 
-### Background on Data Mined Crystal Structure and Compound Prediction
+### Background
 
 Crystal structure and compound prediction is an essential step of computational materials
 design.
