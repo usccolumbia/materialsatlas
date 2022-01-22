@@ -119,6 +119,7 @@ To cite the Structure Predictor App, please reference the following works:
 [^1]: 10.1021/cm100795d
 [^2]: 10.1038/nmat1691
 [^3]: Glass, Colin W., Artem R. Oganov, and Nikolaus Hansen. "USPEX—Evolutionary crystal structure prediction." Computer physics communications 175, no. 11-12 (2006): 713-720.
+[^4]: G. Hautier, V. Ehrlacher, C.C. Fischer, A. Jain, G. Ceder, Data Mined Ionic Substitutions for the Discovery of New Compounds, Inorganic Chemistry, vol. 50, 2011, pp. 656-663.
 ### Authors
 
 - Jianjun Hu
