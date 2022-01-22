@@ -37,14 +37,16 @@ The ions have been sorted by Mendeleev number and therefore groups of chemically
 Red colors indicate that two ions
 tend to substitute while blue is associated with pair of species not substituting to each other.
 
-![ionic substitution correlations](img/structure-predictor/ions-correlation.png)
+
+<!-- ![ionic substitution correlations](img/structure-predictor/ions-correlation.png)
 _Figure 2: Data mined tendency for ionic substitutions.
 Red indicates high substitution tendency.
-Blue indicates that the tow ions tend to not substitute._
+Blue indicates that the tow ions tend to not substitute._ -->
 
 ### The compound prediction procedure
 
-The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
+
+<!-- The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
 The model we used was inspired by previous work in the field of machine translation.
 In this field, it is the probability for a word in one language to be able to be substituted by a word in another language.
 In our case, we substitute ions rather than words.
@@ -52,7 +54,7 @@ After we built this probability function, from a database of experimental data (
 Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species).
 Targeting a specific combination of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound.
 If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we discard it and go to the next ICSD compound.
-There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds.
+There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds. -->
 
 
 ### Performance and Limitations
