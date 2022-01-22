@@ -1,5 +1,5 @@
 # TCSP: Template based Crystal Structure Predictor
-#### By Lai Wei (魏莱)
+#### By Lai Wei (魏涞)
 
 ## Manual
 
