@@ -27,9 +27,9 @@ Finally, the last step consists of testing those candidates for stability using 
 
 ### The Template/Substitution based Structure Prediction Method
 
-The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
-In this section we will briefly explain the idea of the approach and how to use the explorer.
-More details can be found in Hautier et al.[^2]
+The crystal structure prediction model available on the MaterialsAtlas is based on our recent work on the template based crystal structure prediction.
+In this section we will briefly explain the idea of the approach and how to use the TCSP app.
+More details can be found in L.Wei et al.[^1]
 
 ### The basic idea
 
@@ -78,33 +78,21 @@ There is a compromise to find between how exhaustive you want to be and how many
 
 ### Performance and Limitations
 
-### Using the Structure Predictor
+### HOW TO: Using the Structure Predictor
 
 #### Entering Inputs
 
-Practically, the procedure for getting predictions consists in 3 steps
+Practically, the procedure for getting predictions consists in 2 steps
 
-1. Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in.
-   For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.
+1. Input the query formula， 
+2. Select the space group of target structure. Input 0 if do not want to specify
+3. Input your email to receive download link of predicted results
+3. Click Predict Now button
 
-2. Pick oxidation states: The model uses the oxidation states to make predictions.
-   V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O.
-   Sometimes you do not know what oxidation states you are interest in.
-   Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn.
-   Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>.
-   This should cover all the chemical space you are looking at.
-
-3. Start the prediction: click 'Predict Structure' to begin the prediction.
-   Predictions are not immediately available and will require some time to complete.
-   You can monitor the status of your request in the [dashboard](https://materialsproject.org/dashboard).
-
-4. Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures.
-   We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters.
-   We do not provide any DFT results due our limited computational budget for the moment.
-   It is the responsibility of the user to run the predictions.
-   Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.
 
 #### Interpreting the Results
+
+After receiving the notification email, download and unzip the result file:
 
 The results pages provides a set of structure id's corresponding to the candidate structures.
 A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
@@ -129,7 +117,9 @@ Finally, as we present a usage of our candidates for computations, an experiment
 
 ### Future features
 
-In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
+To speed up the prediction algorithm, we will implement a template prototype idea, in which each composition prototype will only provide unique structure prototypes are templates to avoid the slow running due to too many duplicate/redundant/similar templates such as the Perovskite cubic templates.
+
+<!-- In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
 For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
 A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>.
 For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>.
@@ -137,17 +127,16 @@ The amount of O and Cl will be set to achieve charge balance and a simple model 
 
 The only data mined model accessible now is the substitution predictor.
 We have developed another model based on correlations between crystal structures at different compositions.[^3][^4] We plan to give access to this model in the future.
-The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).
+The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries). -->
 
 ### Citations
 
 To cite the Structure Predictor App, please reference the following works:
 
-- Wei, Lai, Nihang Fu, Edirisuriya Siriwardane, Wenhui Yang, Sadman Sadeed Omee, Rongzhi Dong, Rui Xin, and Jianjun Hu. "TCSP: a Template based crystal structure prediction algorithm and web server for materials discovery." arXiv preprint arXiv:2111.14049 (2021).
-- Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
+- [^1] Wei, Lai, Nihang Fu, Edirisuriya Siriwardane, Wenhui Yang, Sadman Sadeed Omee, Rongzhi Dong, Rui Xin, and Jianjun Hu. "TCSP: a Template based crystal structure prediction algorithm and web server for materials discovery." arXiv preprint arXiv:2111.14049 (2021).
+- [^2] Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
-[^1]: 10.1038/nmat2321
-[^2]: 10.1021/ic102031h
+
 [^3]: 10.1021/cm100795d
 [^4]: 10.1038/nmat1691
 
