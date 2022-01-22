@@ -40,45 +40,18 @@ The Pauling's rule check tool here is implemented using the method as described 
 ![substitution example](img/structure-predictor/substitution-example.png)
 _Figure 1: An example of ionic substitution._
 
-It is common for chemists to propose new compounds from the substitution of
-another, chemically similar, ion.
-For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
-one can deduct that it is likely for another chemically similar ion as Ca<sup>2+</sup> to form the same structure.
-We have
-implemented a mathematical model that learns these substitution rules from a database of experimentally
-observed crystal structure (e.g., the ICSD).
-Basically, what the model provides is a probability
-distribution for any ionic substitution.
-In Figure 2 we show the matrix indicating the data mined
-substitution tendency for two ionic species obtained from this work.
-The ions have been sorted by Mendeleev number and therefore groups of chemically similar ions (e.g., the transition metals) are grouped together.
-Red colors indicate that two ions
-tend to substitute while blue is associated with pair of species not substituting to each other.
 
 ![ionic substitution correlations](img/structure-predictor/ions-correlation.png)
 _Figure 2: Data mined tendency for ionic substitutions.
 Red indicates high substitution tendency.
 Blue indicates that the tow ions tend to not substitute._
 
-### The compound prediction procedure
 
-The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
-The model we used was inspired by previous work in the field of machine translation.
-In this field, it is the probability for a word in one language to be able to be substituted by a word in another language.
-In our case, we substitute ions rather than words.
-After we built this probability function, from a database of experimental data (here the ICSD), we can perform compound predictions.
-Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species).
-Targeting a specific combination of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound.
-If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we discard it and go to the next ICSD compound.
-There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds.
 
 ![substitution flowchart](img/structure-predictor/substitution-flowchart.png)
 _Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability._
 
-From this procedure, we can see that the threshold set is quite important.
-A higher threshold will give you less false positives (suggested compounds that are not stable), but also less true positives.
-On the other hand, too low a threshold will give more true positives, but consequently, more false positives.
-There is a compromise to find between how exhaustive you want to be and how many candidates you can have, in terms of computational budget (that you will have to test down the road for stability using DFT).
+
 
 ### Performance and Limitations
 
@@ -110,7 +83,8 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
-The results pages provides a set of structure id's corresponding to the candidate structures.
+
+<!-- The results pages provides a set of structure id's corresponding to the candidate structures.
 A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
 Cif and POSCAR files for each candidate can be downloaded.
 Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
@@ -129,11 +103,12 @@ Please note that we only presented an approach for building zero K, zero pressur
 It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature.
 This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.
 
-Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern.
+Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern. -->
 
 ### Future features
 
-In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
+
+<!-- In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
 For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
 A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>.
 For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>.
@@ -141,7 +116,7 @@ The amount of O and Cl will be set to achieve charge balance and a simple model 
 
 The only data mined model accessible now is the substitution predictor.
 We have developed another model based on correlations between crystal structures at different compositions.[^3][^4] We plan to give access to this model in the future.
-The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).
+The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries). -->
 
 ### Citations
 
