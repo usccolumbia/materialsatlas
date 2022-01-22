@@ -18,7 +18,7 @@ If you notice an error or omission, please post an [issue](https://github.com/ma
 edit to us via a Pull Request.
 
 Thanks,
-Materials Atlas Team
+MaterialsAtlas Team
 
 # Contributing
 
@@ -32,20 +32,20 @@ Fork this repository and then clone it to your computer.
 Create a Python 3 environment for this project and activate it. Example flow using `conda`:
 
 ```
-$ conda create -n mpdocs python=3
-$ conda activate mpdocs
+$ conda create -n madocs python=3
+$ conda activate madocs
 ```
 
 Navigate to the folder of your cloned repository, and install dependencies:
 
 ```
-(mpdocs)$ pip install -r requirements.txt
+(madocs)$ pip install -r requirements.txt
 ```
 
 Start the development server:
 
 ```
-(mpdocs)$ mkdocs serve
+(madocs)$ mkdocs serve
 ```
 
 Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to preview the site and see changes as you make them.
