@@ -1,5 +1,5 @@
 
-# Composition based Machine Learning Predictor of Materials Properties
+## Composition based Machine Learning Predictor of Materials Properties
 
 ## Manual
 
