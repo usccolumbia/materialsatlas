@@ -1,9 +1,9 @@
 
-# Structure Predictor
+# 2D materials Predictor
 
 ## Manual
 
-### Background on Data Mined Crystal Structure and Compound Prediction
+### Background on 2D materials Prediction
 
 Crystal structure and compound prediction is an essential step of computational materials
 design.
@@ -153,5 +153,5 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### Authors
 
-- Geoffroy Hautier
-- Anubhav Jain
+- Yuqi Song
+- Jianjun Hu
