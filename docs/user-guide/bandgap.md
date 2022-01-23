@@ -1,9 +1,11 @@
 
-# Structure Predictor
+# Band Gap Predictor
 
 ## Manual
 
-### Background on Data Mined Crystal Structure and Compound Prediction
+### Background
+
+Band gap is the property of materials in....
 
 Crystal structure and compound prediction is an essential step of computational materials
 design.
@@ -25,7 +27,15 @@ The basic idea is to learn the chemical rules governing phase stability from a d
 Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
 Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
 
-### The Ionic Substitution based Structure Prediction Method
+### The Band Gap Prediction Method
+
+We provide two types of predictors including composition based bandgap predictor and structure based bandgap predictor. 
+
+#### Composition based band gap predictor
+Roost ->for bandgap prediction. 
+
+#### Structure based bandgap predictor
+DeeperGATGNN -->cite our paper. 
 
 The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
 In this section we will briefly explain the idea of the approach and how to use the explorer.
