@@ -17,5 +17,4 @@ If you notice an error or omission, please post an [issue](https://github.com/us
 (<span class="md-icon" style="color:grey">edit</span>) on a page to suggest an
 edit to us.
 
-Thanks,
-Materials Atlas Team
+MaterialsAtlas Team
