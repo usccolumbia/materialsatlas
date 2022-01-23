@@ -64,7 +64,7 @@ There is also a check to make sure we do not form duplicate structures and only 
 
 #### Entering Inputs
 
-Practically, the procedure for getting predictions consists in 2 steps
+Practically, the procedure for getting predictions consists in 4 steps
 
 1. Input the query formula， 
 2. Select the space group of target structure. Input 0 if do not want to specify
