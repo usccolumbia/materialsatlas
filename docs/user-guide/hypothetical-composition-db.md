@@ -33,8 +33,10 @@ More details can be found in Hautier et al.[^2]
 
 ### The basic idea
 
-![How MATGAN works](img/matgan.png)
+<img src="img/matgan.png" width="400">
 _Figure 1: Generative models of materials compositions._
+
+<!-- ![How MATGAN works](img/matgan.png) -->
 
 
 
