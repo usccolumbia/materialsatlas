@@ -1,10 +1,10 @@
-site_name: "Materials Project Documentation"
-site_description: Documentation for The Materials Project, an open database of computed materials properties to accelerate materials discovery and design.
-copyright: Built by The Materials Project
-site_url: https://docs.materialsproject.org
+site_name: "MaterialsAtlas Documentation"
+site_description: Documentation for MaterialsAtlas.org, an open web app platform for accelerating materials discovery and design.
+copyright: Built by The MaterialsAtlas.org Team
+site_url: https://docs.materialsatlas.org
 
-repo_name: "materialsproject/docs"
-repo_url: "https://github.com/materialsproject/docs"
+repo_name: "materialsatlas/docs"
+repo_url: "https://github.com/usccolumbia/materialsatlas/docs"
 
 nav:
   - Home: "index.md"
