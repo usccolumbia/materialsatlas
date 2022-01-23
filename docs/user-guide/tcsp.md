@@ -20,6 +20,7 @@ More details can be found in L.Wei et al. [^1]
 ### The basic idea
 
 ![TCSP_flowchart](img/TCSP_flowchart.png)
+
 _Figure 1: Flowchart of TCSP algorithm._
 
 It is common for chemists to propose new compounds from the substitution of
