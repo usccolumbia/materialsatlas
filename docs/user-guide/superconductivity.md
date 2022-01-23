@@ -5,16 +5,9 @@
 
 ### Background on Superconductivity Tc Prediction
 
-Crystal structure and compound prediction is an essential step of computational materials
-design.
-Indeed, while many materials properties can be computed nowadays with _ab-initio_
-computations.
-Those computed properties are only relevant if they are evaluated on a compound (i.e., a
-stoichiometry and crystal structure) stable enough to be formed.
-Crystal structure prediction can be quite useful
-for experimentalists too.
-For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.
 
+
+The Supercon database contains a variety of superconductors, including two large families of cuprates and iron-based (about 35% and 9%, respectively). The remaining set contains a mix of various materials, including conventional phonon-driven superconductors (e.g., elemental superconductors, A15 compounds), known unconventional superconductors like the layered nitrides and heavy fermions, and many materials with unknown mechanism of superconductivity (such as bismuthates and borocarbides). Graphene with magic angles are another category of superconductors.
 
 
 ### The Superconductor Critical Temperature Prediction Method
