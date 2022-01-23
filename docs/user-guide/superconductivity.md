@@ -5,7 +5,7 @@
 
 ### Background on Superconductivity Tc Prediction
 
-
+Superconductors were typically discovered by trial-and-error aided by the knowledge and intuition of individual researchers. Machine learning based screening of known materials compositions and structures for high transition temperature (Tc) superconductors are highly desirable. Here we explore the capability of machine learning model for composition based superconductor Tc prediction. 
 
 The Supercon database contains a variety of superconductors, including two large families of cuprates and iron-based (about 35% and 9%, respectively). The remaining set contains a mix of various materials, including conventional phonon-driven superconductors (e.g., elemental superconductors, A15 compounds), known unconventional superconductors like the layered nitrides and heavy fermions, and many materials with unknown mechanism of superconductivity (such as bismuthates and borocarbides). Graphene with magic angles are another category of superconductors.
 
