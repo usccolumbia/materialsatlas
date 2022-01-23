@@ -33,34 +33,20 @@ More details can be found in Hautier et al.[^2]
 
 ### The basic idea
 
-![substitution example](img/structure-predictor/substitution-example.png)
-_Figure 1: An example of ionic substitution._
+![How MATGAN works](img/matgan.png)
+_Figure 1: Generative models of materials compositions._
 
 
 
 ### The compound generation procedure
 
-The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
-The model we used was inspired by previous work in the field of machine translation.
-In this field, it is the probability for a word in one language to be able to be substituted by a word in another language.
-In our case, we substitute ions rather than words.
-After we built this probability function, from a database of experimental data (here the ICSD), we can perform compound predictions.
-Figure 3 illustrates the procedure for 4 ions (but this can be generalized to any number of species).
-Targeting a specific combination of 4 ions (e.g., Ba<sup>2+</sup>, Fe<sup>3+</sup>, La<sup>3+</sup>, O<sup>2-</sup> ), we look for any substitution from known compounds (in the ICSD) that have a high enough probability to be likely to form a new stable compound.
-If the substitution is higher than a certain threshold we keep it as a possible candidate, otherwise we discard it and go to the next ICSD compound.
-There is also a check to make sure we do not form duplicate structures and only predict charge balanced compounds.
-
-![substitution flowchart](img/structure-predictor/substitution-flowchart.png)
-_Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability._
-
-From this procedure, we can see that the threshold set is quite important.
-A higher threshold will give you less false positives (suggested compounds that are not stable), but also less true positives.
-On the other hand, too low a threshold will give more true positives, but consequently, more false positives.
-There is a compromise to find between how exhaustive you want to be and how many candidates you can have, in terms of computational budget (that you will have to test down the road for stability using DFT).
+Our generative adversal network (GAN) model for inorganic materials composition generation is trained with the formulas of known materials as deposited in Materials Project, ICSD or OQMD databases. Once it is trained, a simple run can generate new composition. 
 
 ### Performance and Limitations
 
-### Using the Structure Predictor
+
+
+### Searching the hypothetical materials database
 
 #### Entering Inputs
 
@@ -108,5 +94,4 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### Authors
 
-- Geoffroy Hautier
-- Anubhav Jain
+- Dr. Jianjun Hu
