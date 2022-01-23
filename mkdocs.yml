@@ -22,27 +22,34 @@ nav:
       - "Phonons": "methodology/phonons.md"
       - "Volume Change Error": methodology/volume-change-error.md
   - User Reference:
-      - "Crystal Toolkit": "user-guide/crystal-toolkit.md"
-      - "Materials Explorer": "user-guide/materials-explorer.md"
-      - "Battery Explorer": "user-guide/batteries-explorer.md"
-      - "Molecules Explorer": "user-guide/molecules-explorer.md"
-      - "Structure Predictor": "user-guide/structure-predictor.md"
-      - "Pourbaix Diagram": "user-guide/pourbaix-tool.md"
-      - "Phase Diagram": "user-guide/phase-diagram.md"
-      - "XAS Spectra": user-guide/xray-absorption-spectra.md
-      - "XAS Matcher": "user-guide/xas-matcher.md"
-      - "Reaction Calculator": "user-guide/reaction-calculator.md"
-      - "Glossary": "user-guide/glossary-of-terms.md"
-      - "Materials API (MAPI)": "open-apis/the-materials-api.md"
-      - "Nanoporous Explorer": "user-guide/nanoporous-explorer.md"
-      - "Deprecations": "user-guide/deprecations.md"
-      - "Developer Area": "user-guide/developers-area.md"
-      - "Interface Reactions": user-guide/interface-reactions.md
-      - "Molecular Terms": user-guide/molecular_terms.md
-      - "MPComplete": user-guide/mpcomplete.md
-      - "RFB Dashboard": user-guide/rfb_dashboard.md
-      - "Share your story": user-guide/share-your-story.md
-      - "Structure Similarity": user-guide/structure-similarity.md
+      - "Charge Neutrality": "user-guide/charge_neutrality.md"
+      - "Electronegativity Balance": "user-guide/electronegativity-balance.md"
+      - "Formation Energy+e-hull": "user-guide/formation_energy_ehull.md"
+      - "Pauling Rules": "user-guide/pauling_rules.md"
+      - "Phonon Check": "user-guide/phonon-check.md"
+      - "Lattice constant prediction": "user-guide/lattice-constant-prediction.md"
+      - "Space group crystal system": "user-guide/space-group-crystal-system.md"
+      - "Crystal Structure Prediction": "user-guide/tcsp.md"
+      - "2D Materials": "user-guide/2d-materials.md"
+      - "Noncentro symmetry check": "user-guide/noncentrosymmetry-check.md"
+      - "Band gap": "user-guide/bandgap.md"
+      - "Elastic Moduli": "open-apis/elastic-moduli.md
+      - "Hardness": "user-guide/hardness.md"
+      - "Thermal conductivity": "user-guide/thermalconductivity.md"
+      - "Ionic conductivity": "user-guide/ionic-conductivity.md"
+      - "Superconductivity": "user-guide/superconductivity.md"
+      - "Hypothetical composition database": "user-guide/hypothetical-composition-db.md"
+      - "Hypothetical Cubic Materials": "user-guide/hypothetical-cubic-materials-db.md"
+      - "Hypothetical 2D materials database": "user-guide/hypothetical-2d-materials-db.md"
+      - "Hypothetical Lithium materials database": "user-guide/hypothetical-lithium-materials-db.md"
+      - "Composition enumeration": "user-guide/composition-enumerator.md"
+      - "Feature generation": "user-guide/feature-generator.md"
+      - "ML composition": "user-guide/ml-composition-prediction.md"
+      - "ML structure": "user-guide/ml-structure-prediction.md"
+      - "Find similar composition": "user-guide/find-similar-composition.md"
+      - "Find similar structure": "user-guide/find-similar-structure.md"
+      - "Cif -- Poscar": "user-guide/cif-poscar-convert.md"
+      - "Generate supercell": "user-guide/supercell-generator.md"
   - Database Updates: "database-updates.md"
   - Contribution:
       - "Newsfeed": "contrib/spec/newsfeed.md"
