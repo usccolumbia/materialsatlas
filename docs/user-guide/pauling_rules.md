@@ -37,7 +37,7 @@ The Pauling's rule check tool for structures here is implemented using the metho
 
 The composition based Pauling rule check is implemented using the [Smact](https://smact.readthedocs.io/en/stable/_modules/smact/screening.html#pauling_test) package which can check if a combination of ions makes chemical sense, (i.e. positive ions should be of lower Pauling electronegativity)
 
-### The basic idea
+<!-- ### The basic idea
 
 ![substitution example](img/structure-predictor/substitution-example.png)
 _Figure 1: An example of ionic substitution._
@@ -52,7 +52,7 @@ Blue indicates that the tow ions tend to not substitute._
 
 ![substitution flowchart](img/structure-predictor/substitution-flowchart.png)
 _Figure 3: Procedure for proposing new compound candidates in a quaternary system using the ionic substitution probability._
-
+ -->
 
 
 ### Performance and Limitations
@@ -73,30 +73,12 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
+The web app will return pass or no-pass for the input formula or structure. 
 
-<!-- The results pages provides a set of structure id's corresponding to the candidate structures.
-A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
-Cif and POSCAR files for each candidate can be downloaded.
-Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
-For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>.
-This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull.
-Figure 4 shows a convex hull (in green) for an A-B system.
-Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases.
-For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.
-
-![convex hull example](img/structure-predictor/convex-hull.png)
-_Figure 4: An example of the convex hull construction._
-
-More information about phase stability and convex hull can be obtained in the [phase diagram app manual](phase-diagram.md).
-
-Please note that we only presented an approach for building zero K, zero pressure phase diagrams.
-It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature.
-This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.
-
-Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern. -->
 
 ### Future features
 
+TBD
 
 <!-- In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
 For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
