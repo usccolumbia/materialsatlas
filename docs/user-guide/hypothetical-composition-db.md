@@ -1,9 +1,10 @@
 
-# Structure Predictor
+# Hypothetical Materiasl Composition Database
+#### by Jianjun Hu
 
 ## Manual
 
-### Background on Data Mined Crystal Structure and Compound Prediction
+### Background
 
 Crystal structure and compound prediction is an essential step of computational materials
 design.
@@ -25,7 +26,7 @@ The basic idea is to learn the chemical rules governing phase stability from a d
 Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
 Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
 
-### The Ionic Substitution based Structure Prediction Method
+### The Generation of New Materials Recipes/Compositions Method
 
 The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
 In this section we will briefly explain the idea of the approach and how to use the explorer.
@@ -36,27 +37,9 @@ More details can be found in Hautier et al.[^2]
 ![substitution example](img/structure-predictor/substitution-example.png)
 _Figure 1: An example of ionic substitution._
 
-It is common for chemists to propose new compounds from the substitution of
-another, chemically similar, ion.
-For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
-one can deduct that it is likely for another chemically similar ion as Ca<sup>2+</sup> to form the same structure.
-We have
-implemented a mathematical model that learns these substitution rules from a database of experimentally
-observed crystal structure (e.g., the ICSD).
-Basically, what the model provides is a probability
-distribution for any ionic substitution.
-In Figure 2 we show the matrix indicating the data mined
-substitution tendency for two ionic species obtained from this work.
-The ions have been sorted by Mendeleev number and therefore groups of chemically similar ions (e.g., the transition metals) are grouped together.
-Red colors indicate that two ions
-tend to substitute while blue is associated with pair of species not substituting to each other.
 
-![ionic substitution correlations](img/structure-predictor/ions-correlation.png)
-_Figure 2: Data mined tendency for ionic substitutions.
-Red indicates high substitution tendency.
-Blue indicates that the tow ions tend to not substitute._
 
-### The compound prediction procedure
+### The compound generation procedure
 
 The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
 The model we used was inspired by previous work in the field of machine translation.
@@ -106,38 +89,11 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
-The results pages provides a set of structure id's corresponding to the candidate structures.
-A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
-Cif and POSCAR files for each candidate can be downloaded.
-Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
-For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>.
-This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull.
-Figure 4 shows a convex hull (in green) for an A-B system.
-Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases.
-For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.
 
-![convex hull example](img/structure-predictor/convex-hull.png)
-_Figure 4: An example of the convex hull construction._
-
-More information about phase stability and convex hull can be obtained in the [phase diagram app manual](phase-diagram.md).
-
-Please note that we only presented an approach for building zero K, zero pressure phase diagrams.
-It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature.
-This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.
-
-Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern.
 
 ### Future features
 
-In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
-For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
-A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>.
-For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>.
-The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.
-
-The only data mined model accessible now is the substitution predictor.
-We have developed another model based on correlations between crystal structures at different compositions.[^3][^4] We plan to give access to this model in the future.
-The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).
+To add more information to the hypothetical materials compositions, machine learning models of materials properties will be applied to the data entries to calculate their computed physical and chemical properties.
 
 ### Citations
 
