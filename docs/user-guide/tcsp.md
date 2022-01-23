@@ -68,12 +68,17 @@ Practically, the procedure for getting predictions consists in 2 steps
 1. Input the query formula， 
 2. Select the space group of target structure. Input 0 if do not want to specify
 3. Input your email to receive download link of predicted results
-3. Click Predict Now button
+4. Click Predict Now button
 
 
 #### Interpreting the Results
 
 After receiving the notification email, download and unzip the result file:
+
+1. results.txt
+2. similarformulas.csv
+3. candidatetempaltes.csv
+4. score-mp-mpid.cif files.
 
 The results pages provides a set of structure id's corresponding to the candidate structures.
 A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
