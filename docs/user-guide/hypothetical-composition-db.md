@@ -45,6 +45,11 @@ Our generative adversal network (GAN) model for inorganic materials composition 
 ### Performance and Limitations
 
 
+![How MATGAN works](img/matgan_performance1.png)
+_Figure 2: Generative models of materials compositions._
+
+![How MATGAN works](img/matgan_performance2.png)
+_Figure 3: Generative models of materials compositions._
 
 ### Searching the hypothetical materials database
 
