@@ -1,5 +1,5 @@
 
-# Find Similar Structure
+# Find Similar Structures
 #### Dr. Hu
 
 ## Manual
@@ -111,5 +111,4 @@ To cite the Structure Search App, please reference the following works:
 
 ### Authors
 
-- Geoffroy Hautier
-- Anubhav Jain
+- Dr. Hu
