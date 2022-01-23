@@ -95,9 +95,12 @@ To add more information to the hypothetical materials compositions, machine lear
 
 To cite the Structure Predictor App, please reference the following works:
 
-- [^1]: Dan, Y., Zhao, Y., Li, X., Li, S., Hu, M., & Hu, J. (2020). Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials. npj Computational Materials, 6(1), 1-7.
-- [^2]: Hu, J., Stefanov, S., Song, Y., Omee, S. S., Louis, S. Y., Siriwardane, E., & Zhao, Y. (2021). MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. arXiv preprint arXiv:2109.04007.
+- Dan, Y., Zhao, Y., Li, X., Li, S., Hu, M., & Hu, J. (2020). Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials. npj Computational Materials, 6(1), 1-7.
+- Hu, J., Stefanov, S., Song, Y., Omee, S. S., Louis, S. Y., Siriwardane, E., & Zhao, Y. (2021). MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. arXiv preprint arXiv:2109.04007.
 
+### References
+[^1]: Dan, Y., Zhao, Y., Li, X., Li, S., Hu, M., & Hu, J. (2020). Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials. npj Computational Materials, 6(1), 1-7.
+[^2]: Hu, J., Stefanov, S., Song, Y., Omee, S. S., Louis, S. Y., Siriwardane, E., & Zhao, Y. (2021). MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. arXiv preprint arXiv:2109.04007.
 [^3]: 10.1021/cm100795d
 [^4]: 10.1038/nmat1691
 
