@@ -1,6 +1,5 @@
 
 # Hypothetical Materiasl Composition Database
-#### by Jianjun Hu
 
 ## Manual
 
