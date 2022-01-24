@@ -33,7 +33,7 @@ nav:
       - "2D Materials": "user-guide/2d-materials.md"
       - "Noncentro symmetry check": "user-guide/noncentrosymmetry-check.md"
       - "Band gap": "user-guide/bandgap.md"
-      - "Elastic Moduli": "open-apis/elastic-moduli.md
+      - "Elastic Moduli": "open-apis/elastic-moduli.md"
       - "Hardness": "user-guide/hardness.md"
       - "Thermal conductivity": "user-guide/thermalconductivity.md"
       - "Ionic conductivity": "user-guide/ionic-conductivity.md"
