@@ -50,8 +50,8 @@ We find that the prediction accuracy of lattice constants strongly depend on the
 
 To cite the Structure Predictor App, please reference the following works:
 
-- Liang, Haotong, Valentin Stanev, A. Gilad Kusne, and Ichiro Takeuchi. "CRYSPNet: Crystal structure predictions via neural networks." Physical Review Materials 4, no. 12 (2020): 123802.
 - Li, Yuxin, Wenhui Yang, Rongzhi Dong, and Jianjun Hu. "MLatticeABC: generic lattice constant prediction of crystal materials using machine learning." ACS omega 6, no. 17 (2021): 11585-11594.
+- Liang, Haotong, Valentin Stanev, A. Gilad Kusne, and Ichiro Takeuchi. "CRYSPNet: Crystal structure predictions via neural networks." Physical Review Materials 4, no. 12 (2020): 123802.
 - Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
 
