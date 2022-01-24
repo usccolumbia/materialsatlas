@@ -9,20 +9,13 @@ Given a material composition, predicting its unit cell lattice constants can hel
 
 ### The Lattice Constants Prediction Method
 
-The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
-In this section we will briefly explain the idea of the approach and how to use the explorer.
-More details can be found in Hautier et al.[^2]
-
-
-
-![substitution example](img/structure-predictor/substitution-example.png)
-_Figure 1: An example of ionic substitution._
-
-
-
+The lattice constants (unit cell parameters) prediction model here is based on our recent work on composition based lattice parameter prediction. It uses the Magpie composition descriptors with deep neural networks for lattice constant predictions. In addition to the basic Magpie Features, we introduce a few global features to enhance Magpie descriptors. 
+More details can be found in Y.Li et al.[^1]
 
 
 ### Performance and Limitations
+
+<img src="img/LTC-performance.png" width=500>
 
 ### Using the Lattice Constant Predictor
 
