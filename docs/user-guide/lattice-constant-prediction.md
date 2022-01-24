@@ -36,6 +36,7 @@ Practically, the procedure for getting predictions consists in 3 steps
    When the csv file is uploaded, then the predictor just uses the generic model.
 
 3. Click "Predict Now"
+4. collect the results by cliking the "Download the Results" Link.
 
 #### Interpreting the Results
 
