@@ -1,5 +1,5 @@
 
-# Find Similar Structures
+# Similar Structure Finder
 #### Dr. Hu
 
 ## Manual
