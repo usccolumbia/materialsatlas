@@ -9,7 +9,7 @@ Tinkering and doping are two common ways to optimize an existing material or fin
 
 ### The composition similarity search Method
 
-We use the Element Move Distance (ElMD) to calculate the similarity of the query formula and the 130,000 formulas of the Materials Project database and return the top most similary compositions. The ElMD distance is defined based on atomic chemical similarity as discussed in [^1].
+We use the Element Move Distance (ElMD) to calculate the similarity of the query formula and the 130,000 formulas of the Materials Project database and return the top most similary compositions. The ElMD distance is defined based on atomic chemical similarity as discussed in [^1] and here [^2].
 
 
 
@@ -46,7 +46,7 @@ To cite the Structure Predictor App, please reference the following works:
 
 [^1]: Hargreaves, Cameron J., Matthew S. Dyer, Michael W. Gaultois, Vitaliy A. Kurlin, and Matthew J. Rosseinsky. "The earth mover’s distance as a metric for the space of inorganic compositions." Chemistry of Materials 32, no. 24 (2020): 10610-10620.
 
-[^2]: 10.1021/ic102031h
+[^2]: https://github.com/lrcfmd/ElMD
 [^3]: 10.1021/cm100795d
 [^4]: 10.1038/nmat1691
 
