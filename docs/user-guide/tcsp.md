@@ -23,7 +23,10 @@ More details can be found in L.Wei et al. [^1]
 
 _Figure 1: Flowchart of TCSP algorithm._
 
-It is common for chemists to propose new compounds from the substitution of
+Our template-based crystal structure prediction algorithm is illustrated in Figure 1. Givenan input formula (e.g., SrTiO3), the user can choose to specify the expected space group number for predicted structures (e.g., space group=140). The TCSP server can search structure templates with the same prototype (sometimes called an anonymous formula) (e.g., ABC3) and the same space group if specified. It uses an Element’s mover distance (ElMD) to measure the composition similarity between the query formula and the compositions of all the template structures then pick the top K structures as template candidates with the smallest compositiondistances. For each of the candidate templates, 
+
+
+<!-- It is common for chemists to propose new compounds from the substitution of
 another, chemically similar, ion.
 For instance, as illustrated in Figure 1, knowing that BaTiO<sub>3</sub> forms a perovskite structure,
 one can deduct that it is likely for another chemically similar ion as Ca<sup>2+</sup> to form the same structure.
@@ -36,7 +39,7 @@ In Figure 2 we show the matrix indicating the data mined
 substitution tendency for two ionic species obtained from this work.
 The ions have been sorted by Mendeleev number and therefore groups of chemically similar ions (e.g., the transition metals) are grouped together.
 Red colors indicate that two ions
-tend to substitute while blue is associated with pair of species not substituting to each other.
+tend to substitute while blue is associated with pair of species not substituting to each other. -->
 
 
 <!-- ![ionic substitution correlations](img/structure-predictor/ions-correlation.png)
@@ -87,7 +90,7 @@ similar_formulas.csv: Based on the distance score, we pick the top 100 templates
 
 tempaltesCandidates.csv: Final template Candidates
 
-score-mp-mpid.cif files: New materials structure files. The first number is the MlED distance score calculated by Algorithm 1, which represents the similarity between the template formula and the query formula. The smaller the distance score, the higher the similarity. The mpid represents the id of the template formula on the material project.
+score-mp-mpid.cif files: New materials structure files. The first number is the MlED distance score calculated by Algorithm 1, which represents the similarity between the template formula and the query formula. The smaller the distance score, the higher the similarity. The mpid represents the id of the template formula in the material project database.
 
 
 <!-- The results pages provides a set of structure id's corresponding to the candidate structures.
