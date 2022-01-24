@@ -39,7 +39,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
-
+<img src='img/LTC.png' width=500>
 
 ### Future features
 
