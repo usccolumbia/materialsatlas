@@ -3,29 +3,14 @@
 
 ## Manual
 
-### Background on Materials Property Prediction using Composition
+### Background 
 
-Crystal structure and compound prediction is an essential step of computational materials
-design.
-Indeed, while many materials properties can be computed nowadays with _ab-initio_
-computations.
-Those computed properties are only relevant if they are evaluated on a compound (i.e., a
-stoichiometry and crystal structure) stable enough to be formed.
-Crystal structure prediction can be quite useful
-for experimentalists too.
-For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.
+This web app aims to build a generic program for click-and-play training and testing a composition based machine learning predictors for any specified materials property of interest to the use (instead of us). 
 
-The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. [^1]
-Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions).
-This optimization is extremely challenging as the energy landscape is very rugged and full of local minima.
-Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.
 
-In a departure to this traditional approach, the methods we have developed use a combination of data mining and _ab-initio_ computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget.
-The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds.
-Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
-Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
 
-### The Ionic Substitution based Structure Prediction Method
+
+### The ML based property Prediction Method
 
 The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
 In this section we will briefly explain the idea of the approach and how to use the explorer.
@@ -106,15 +91,8 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
-The results pages provides a set of structure id's corresponding to the candidate structures.
-A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
-Cif and POSCAR files for each candidate can be downloaded.
-Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
-For instance, if a AB compound is proposed and its energy is higher than a combination of half A<sub>2</sub>B and half AB<sub>2</sub>.
-This stability analysis can be performed using the convex hull construction that will effectively test the stability of the phases against each other and come with a set of stable phases that are on the hull.
-Figure 4 shows a convex hull (in green) for an A-B system.
-Blue points indicate phases that are not on the hull and therefore unstable and red points indicate stable phases.
-For instance, the construction shows directly that the phase γ at AB will decompose into α<sub>1</sub> and β<sub>2</sub>.
+
+
 
 ![convex hull example](img/structure-predictor/convex-hull.png)
 _Figure 4: An example of the convex hull construction._
@@ -129,15 +107,7 @@ Finally, as we present a usage of our candidates for computations, an experiment
 
 ### Future features
 
-In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
-For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
-A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>.
-For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>.
-The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.
-
-The only data mined model accessible now is the substitution predictor.
-We have developed another model based on correlations between crystal structures at different compositions.[^3][^4] We plan to give access to this model in the future.
-The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries).
+More algorithms and descriptors can be added to this extensible modules.
 
 ### Citations
 
@@ -153,5 +123,4 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### Authors
 
-- Geoffroy Hautier
-- Anubhav Jain
+- Dr. Jianjun Hu
