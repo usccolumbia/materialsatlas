@@ -85,9 +85,9 @@ results.txt: Producer output
 
 similar_formulas.csv: Based on the distance score, we pick the top 100 templates with the same prototype of the query formula
 
-tempaltesCandidates.csv: Because the first template candidate is not necessarily the best template structure replacement, we provide the top 10 template materials to be used for substitution
+tempaltesCandidates.csv: Final template Candidates
 
-score-mp-mpid.cif files: The first number is the MlED distance score calculated by Algorithm 1, which represents the similarity between the template formula and the query formula. The smaller the distance score, the higher the similarity. The mpid represents the id of the template's structure on the material project.
+score-mp-mpid.cif files: New materials structure files. The first number is the MlED distance score calculated by Algorithm 1, which represents the similarity between the template formula and the query formula. The smaller the distance score, the higher the similarity. The mpid represents the id of the template formula on the material project.
 
 
 <!-- The results pages provides a set of structure id's corresponding to the candidate structures.
