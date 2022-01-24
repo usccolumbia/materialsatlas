@@ -47,7 +47,7 @@ _Figure 2: Data mined tendency for ionic substitutions.
 Red indicates high substitution tendency.
 Blue indicates that the tow ions tend to not substitute._ -->
 
-### The compound prediction procedure
+<! -- ### The compound prediction procedure -->
 
 
 <!-- The product of our data mining approach is a probability function indicating how likely is a specific set of ionic substitutions.
