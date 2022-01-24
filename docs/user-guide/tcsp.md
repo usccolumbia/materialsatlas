@@ -64,6 +64,8 @@ There is also a check to make sure we do not form duplicate structures and only 
 
 ### Performance and Limitations
 
+Our TCSP algorithm has been evaluated on the ~130,000 structures in the Materials Project database. However, the predicted structures after element substitution still need to do DFT based relaxation to check their mechanical and thermodynamic stability as final validation. 
+
 ### HOW TO: Using the Structure Predictor
 
 #### Entering Inputs
