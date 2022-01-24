@@ -77,9 +77,14 @@ Practically, the procedure for getting predictions consists in 4 steps
 After receiving the notification email, download and unzip the result file:
 
 1. results.txt
-2. similarformulas.csv
-3. candidatetempaltes.csv
+2. similar_formulas.csv
+3. tempaltesCandidates.csv
 4. score-mp-mpid.cif files.
+
+results.txt: Producer output
+similar_formulas.csv: Based on the distance score, we pick the top 100 templates with the same prototype of the query formula
+tempaltesCandidates.csv: Because the first template candidate is not necessarily the best template structure replacement, we provide the top 10 template materials to be used for substitution
+score-mp-mpid.cif files: The first number is the MlED distance score calculated by Algorithm 1, which represents the similarity between the template formula and the query formula. The smaller the distance score, the higher the similarity. The mpid represents the id of the template's structure on the material project.
 
 The results pages provides a set of structure id's corresponding to the candidate structures.
 A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
