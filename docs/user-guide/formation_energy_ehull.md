@@ -1,5 +1,5 @@
 # Formation Energy and E-above-hull Check
-#### by Dilanga Siriwandre
+#### by Dilanga Siriwardane
 
 ## Manual
 
