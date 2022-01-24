@@ -23,7 +23,7 @@ More details can be found in L.Wei et al. [^1]
 
 _Figure 1: Flowchart of TCSP algorithm._
 
-Our template-based crystal structure prediction algorithm is illustrated in Figure 1. Givenan input formula (e.g., SrTiO3), the user can choose to specify the expected space group number for predicted structures (e.g., space group=140). The TCSP server can search structure templates with the same prototype (sometimes called an anonymous formula) (e.g., ABC3) and the same space group if specified. It uses an Element’s mover distance (ElMD) to measure the composition similarity between the query formula and the compositions of all the template structures then pick the top K structures as template candidates with the smallest compositiondistances. For each of the candidate templates, 
+Our template-based crystal structure prediction algorithm is illustrated in Figure 1. Given an input formula (e.g., SrTiO3), the user can choose to specify the expected space group number for predicted structures (e.g., space group=140). The TCSP server can search structure templates with the same prototype (sometimes called an anonymous formula) (e.g., ABC3) and the same space group if specified. It uses an Element’s mover distance (ElMD) to measure the composition similarity between the query formula and the compositions of all the template structures then pick the top K structures as template candidates with the smallest compositiondistances. For each of the candidate templates, 
 
 
 <!-- It is common for chemists to propose new compounds from the substitution of
