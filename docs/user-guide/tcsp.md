@@ -76,6 +76,7 @@ Practically, the procedure for getting predictions consists in 4 steps
 2. Select the space group of target structure. Input 0 if do not want to specify
 3. Input your email to receive download link of predicted results
 4. Click Predict Now button
+5. Wait for email notification for job completion. A download url link will be sent to your email to collect results. Unzip the results zip file to get the multiple predicted cifs and related process files.
 
 
 #### Interpreting the Results
