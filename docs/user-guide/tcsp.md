@@ -82,11 +82,15 @@ After receiving the notification email, download and unzip the result file:
 4. score-mp-mpid.cif files.
 
 results.txt: Producer output
+
 similar_formulas.csv: Based on the distance score, we pick the top 100 templates with the same prototype of the query formula
+
 tempaltesCandidates.csv: Because the first template candidate is not necessarily the best template structure replacement, we provide the top 10 template materials to be used for substitution
+
 score-mp-mpid.cif files: The first number is the MlED distance score calculated by Algorithm 1, which represents the similarity between the template formula and the query formula. The smaller the distance score, the higher the similarity. The mpid represents the id of the template's structure on the material project.
 
-The results pages provides a set of structure id's corresponding to the candidate structures.
+
+<!-- The results pages provides a set of structure id's corresponding to the candidate structures.
 A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
 Cif and POSCAR files for each candidate can be downloaded.
 Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
@@ -105,7 +109,7 @@ Please note that we only presented an approach for building zero K, zero pressur
 It is possible to use the candidates proposed by the model to perform more advanced stability studies for instance at finite temperature.
 This is more expensive computationally though as the different entropy components (configuration, vibration, etc...) need to be taken into account.
 
-Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern.
+Finally, as we present a usage of our candidates for computations, an experimentalist can also use these candidates to test different structures versus a powder diffraction pattern. -->
 
 ### Future features
 
