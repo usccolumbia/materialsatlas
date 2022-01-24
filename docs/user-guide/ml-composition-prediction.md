@@ -5,7 +5,7 @@
 
 ### Background 
 
-This web app aims to build a generic program for click-and-play training and testing a composition based machine learning predictors for any specified materials property of interest to the use (instead of us). 
+This web app aims to build a generic program for click-and-play training and testing a composition based machine learning predictor for any specified materials property of interest to the use (instead of us). 
 
 
 
