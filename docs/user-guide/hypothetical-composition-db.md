@@ -9,9 +9,7 @@ This database includes the hypothetical materials compositions/formulas generate
 
 ### The Generation of New Materials Recipes/Compositions Method
 
-The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
-In this section we will briefly explain the idea of the approach and how to use the explorer.
-More details can be found in Hautier et al.[^2]
+The generator is based on the GAN neural network model as described in our npj paper [^1]. The GAN model is composed of a generator neural network and a discriminator neural network. When trained with the known materials formulas in the Materials Project database, the generator is trained to generate samples as similar as possible to the known  materials, at the same time, the discriminator is trained to differentiate the true formulas and generated fakes. The armed-race of these two processes push the generator to learn complex chemical rules for assembling chemically valid materials compositions.
 
 ### The basic idea
 
@@ -46,28 +44,18 @@ _Figure 3: Generative models of materials compositions._ -->
 Practically, the procedure for getting predictions consists in 3 steps
 
 1. Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in.
-   For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.
+   For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements. 
+You can also directly type the element symbols separated by space. 
 
-2. Pick oxidation states: The model uses the oxidation states to make predictions.
-   V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O.
-   Sometimes you do not know what oxidation states you are interest in.
-   Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn.
-   Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>.
-   This should cover all the chemical space you are looking at.
+2. Click "Check Now" button
 
-3. Start the prediction: click 'Predict Structure' to begin the prediction.
-   Predictions are not immediately available and will require some time to complete.
-   You can monitor the status of your request in the [dashboard](https://materialsproject.org/dashboard).
+3. The system will show a list of compatible formulas organized in pages of tables. 
 
-4. Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures.
-   We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters.
-   We do not provide any DFT results due our limited computational budget for the moment.
-   It is the responsibility of the user to run the predictions.
-   Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.
+4. You can further narrow down the search by typing more precise pattern of the formula. e.g.  Li2Mn
 
 #### Interpreting the Results
 
-
+The materials compositions have only been checked with basic chemical rules. Formation energy and synthesizability have not been evaluated. So it maybe desirable to use composition based formation energy prediction app to check it. After that, one can also try to estimate the e-above-hull energy to check its synthesizability.
 
 ### Future features
 
@@ -86,7 +74,6 @@ To cite the Structure Predictor App, please reference the following works:
 ### References
 [^1]: Dan, Y., Zhao, Y., Li, X., Li, S., Hu, M., & Hu, J. (2020). Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials. npj Computational Materials, 6(1), 1-7.
 [^2]: Hu, J., Stefanov, S., Song, Y., Omee, S. S., Louis, S. Y., Siriwardane, E., & Zhao, Y. (2021). MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. arXiv preprint arXiv:2109.04007.
-[^3]: 10.1021/cm100795d
-[^4]: 10.1038/nmat1691
+
 
 
