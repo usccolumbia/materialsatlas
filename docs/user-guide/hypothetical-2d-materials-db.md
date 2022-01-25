@@ -55,5 +55,5 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### Authors
 
-- Geoffroy Hautier
-- Anubhav Jain
+- Jianjun HU
+- Yuqi Song
