@@ -36,9 +36,9 @@ Practically, the procedure for getting predictions consists in 3 steps
 4. upload the training set as a csv file, each row contains a material composition and its related property
 e.g.
 
-formula, piezoelectric-coefficient\\
-SrTiO3, 0.23\\
-Li2Co2, 0.15\\
+formula, piezoelectric-coefficient <br>
+SrTiO3, 0.23<br>
+Li2Co2, 0.15<br>
 
 5. upload the test file as a csv file. Each file has the same format but set the property as 0. 
 
