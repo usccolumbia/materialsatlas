@@ -41,10 +41,11 @@ SrTiO3, 0.23<br>
 Li2Co2, 0.15<br>
 
 5. upload the test file as a csv file. Each file has the same format but set the property as 0. 
+When no test file is uploaded, the app will only report the machine learning model performance.
 
 6. click "Run Now"
 
-8. Wait and then download results: 
+7. Wait and then download results: 
 
 #### Interpreting the Results
 
