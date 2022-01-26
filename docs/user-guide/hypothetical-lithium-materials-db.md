@@ -1,43 +1,26 @@
 
 # Hypothetical Lithium Compound/Materials Structure Database
 
+
+#### by Dr. Jianjun Hu
+
 ## Manual
 
-### Background
+### Background 
+Lithium compound materials is playing critical role in portable batteries and electric vehicles. This database aims to collect hypothetical crystal materials structures from several generative models of crystal structures.
 
-Crystal structure and compound prediction is an essential step of computational materials
-design.
-Indeed, while many materials properties can be computed nowadays with _ab-initio_
-computations.
-Those computed properties are only relevant if they are evaluated on a compound (i.e., a
-stoichiometry and crystal structure) stable enough to be formed.
-Crystal structure prediction can be quite useful
-for experimentalists too.
-For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.
 
-The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. [^1]
-Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions).
-This optimization is extremely challenging as the energy landscape is very rugged and full of local minima.
-Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.
+### The Database Generation Method
 
-In a departure to this traditional approach, the methods we have developed use a combination of data mining and _ab-initio_ computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget.
-The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds.
-Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
-Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
-
-### The Method to build this database
-
-The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
-In this section we will briefly explain the idea of the approach and how to use the explorer.
-More details can be found in Hautier et al.[^2]
-
-### The basic idea
-
+We use both crystal structure generator algorithms such as CubicGAN [^1] or physics guided generator [^2], or composition generator such as MATGAN [^3] plus crystal structure prediction algorithms to generate new crystal mateials candidates and then just add those lithium compounds to this database.
 
 
 ### Performance and Limitations
 
-### Using the Structure Predictor
+
+Please note that the compositions in this databse is hypothetical and have no guarantee for its synthesizability or structural stablity. 
+
+### Using the Database Search function
 
 #### Entering Inputs
 
@@ -45,50 +28,35 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 1. Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in.
    For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.
-
-2. Pick oxidation states: The model uses the oxidation states to make predictions.
-   V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O.
-   Sometimes you do not know what oxidation states you are interest in.
-   Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn.
-   Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>.
-   This should cover all the chemical space you are looking at.
-
-3. Start the prediction: click 'Predict Structure' to begin the prediction.
-   Predictions are not immediately available and will require some time to complete.
-   You can monitor the status of your request in the [dashboard](https://materialsproject.org/dashboard).
-
-4. Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures.
-   We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters.
-   We do not provide any DFT results due our limited computational budget for the moment.
-   It is the responsibility of the user to run the predictions.
-   Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.
+2. After the results are returned, you can further narrow down the search by typing in the top right input box with more specific partial formula, e.g. Li2
+3. Interpret the results.
+   
 
 #### Interpreting the Results
 
-The results pages provides a set of structure id's corresponding to the candidate structures.
-A link is provided for each structure id, which provides structure visualization, lattice vectors, atomic positions, and simulated x-ray spectra.
-Cif and POSCAR files for each candidate can be downloaded.
-Typically, the candidates need to be tested for stability against each other (seeing what is the lowest energy structure amongst the candidates at a given composition) but also against other phases known in nature.
+The results pages provides a set of potential Lithium compound materials. 
+
 
 
 ### Future features
 
-In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
-For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
-
+In the future, we want to generate more Lithium materials candidates.
 
 ### Citations
 
-To cite the database, please reference the following works:
+To cite this App, please reference the following works:
 
-- G. Hautier, V. Ehrlacher, C.C. Fischer, A. Jain, G. Ceder, Data Mined Ionic Substitutions for the Discovery of New Compounds, Inorganic Chemistry, vol. 50, 2011, pp. 656-663.
-- A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T. Mueller, K. A. Persson, and G. Ceder, A high-throughput infrastructure for density functional theory calculations, Computational Materials Science, vol. 50, 2011, pp. 2295-2310.
+- Zhao, Yong, Mohammed Al-Fahdi, Ming Hu, Edirisuriya Siriwardane, Yuqi Song, Alireza Nasiri, and Jianjun Hu. "High-throughput discovery of novel cubic crystal materials using deep generative neural networks." arXiv preprint arXiv:2102.01880 (2021).
+- Hu, J., Stefanov, S., Song, Y., Omee, S. S., Louis, S. Y., Siriwardane, E., & Zhao, Y. (2021). MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. arXiv preprint arXiv:2109.04007.
 
-[^1]: 10.1038/nmat2321
-[^2]: 10.1021/ic102031h
-[^3]: 10.1021/cm100795d
-[^4]: 10.1038/nmat1691
+[^1]: Zhao, Yong, Mohammed Al-Fahdi, Ming Hu, Edirisuriya Siriwardane, Yuqi Song, Alireza Nasiri, and Jianjun Hu. "High-throughput discovery of novel cubic crystal materials using deep generative neural networks." arXiv preprint arXiv:2102.01880 (2021).
+[^2]: Zhao, Yong, Edirisuriya Siriwardane, and Jianjun Hu. "Physics guided deep learning generative models for crystal materials discovery." arXiv preprint arXiv:2112.03528 (2021).
+[^3]: Dan, Y., Zhao, Y., Li, X., Li, S., Hu, M., & Hu, J. (2020). Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials. npj Computational Materials, 6(1), 1-7.
+
+
+
 
 ### Authors
 
-- Jianjun Hu
+- Jianjun HU
+
