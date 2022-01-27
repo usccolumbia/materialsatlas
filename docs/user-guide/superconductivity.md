@@ -28,7 +28,10 @@ Blue indicates that the tow ions tend to not substitute._ -->
 
 ### Performance and Limitations
 
-### Using the Structure Predictor
+The current prediction model only considers the composition and neglect the structure information which are usually critical to the superconductivity of the materials. The results and predictive performance should be regarded as some kind of compositional interpolation and suggestion for potential superconductor candidates. 
+
+
+### Using the superconductivity Tc Predictor
 
 #### Entering Inputs
 
@@ -36,13 +39,13 @@ Practically, the procedure for getting predictions consists in 2 steps
 
 1. Input the formula or upload a cif file
 
-2. Start the prediction: click 'Predict Structure' to begin the prediction.
+2. Start the prediction: click 'Predict now' to begin the prediction.
    
 3. Examine results: 
 
 #### Interpreting the Results
 
-
+The result is the predicted critical temperature (K) of superconductivity at pressure 0 gPa.
 
 ### Future features
 
