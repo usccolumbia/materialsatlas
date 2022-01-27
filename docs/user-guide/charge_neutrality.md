@@ -5,7 +5,10 @@
 
 ### Background 
 
-The law of electron charge neutrality states that in any single ionic solution a sum of negative electrical charges attracts an equal sum of positive electrical charges. Here charge neutrality is used as a basic chemical validity test of hypothetical materials compositions. This criterion has been used in our recent study of generative design of new materials compositions [^2].
+The law of electron charge neutrality states that in any single ionic solution a sum of negative electrical charges attracts an equal sum of positive electrical charges. As stated in [^1], "Charge Neutrality Ions tend to combine into charge-neutral aggregates. The same thinking applies to both ionic solids and more covalently bonded semiconductors. Any periodic solid must be charge neutral; otherwise, it would have an infinite electrostatic potential. Balancing oxidation states and fulfilling the valence octet rule are equivalent, e.g., III–V semiconductors, such as GaAs, can be represented as Ga3+As3−. Charge neutrality contracts the compositional space by at least an order of magnitude for binaries, ternaries, and quaternaries".
+
+
+Here charge neutrality is used as a basic chemical validity test of hypothetical materials compositions. This criterion has been used in our recent study of generative design of new materials compositions [^2].
 
 
 ### The charge neutrality checking Method
