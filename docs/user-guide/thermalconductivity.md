@@ -1,5 +1,6 @@
 
 # Thermal Conductivity Predictor
+#### by Dr. Hu
 
 ## Manual
 
