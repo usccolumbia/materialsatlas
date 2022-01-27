@@ -59,9 +59,8 @@ To cite the Structure Predictor App, please reference the following works:
 - Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
 [^1]: National Institute of Materials Science, Materials Information Station, SuperCon, http://supercon.nims.go.jp/index_en.html (2011).
-[^2]: 10.1021/ic102031h
-[^3]: Dan, Yabo, Rongzhi Dong, Zhuo Cao, Xiang Li, Chengcheng Niu, Shaobo Li, and Jianjun Hu. "Computational Prediction of Critical Temperatures of Superconductors Based on Convolutional Gradient Boosting Decision Trees." IEEE Access 8 (2020): 57868-57878.
-[^4]: Li, Shaobo, Yabo Dan, Xiang Li, Tiantian Hu, Rongzhi Dong, Zhuo Cao, and Jianjun Hu. "Critical temperature prediction of superconductors based on atomic vectors and deep learning." Symmetry 12, no. 2 (2020): 262.
+[^2]: Dan, Yabo, Rongzhi Dong, Zhuo Cao, Xiang Li, Chengcheng Niu, Shaobo Li, and Jianjun Hu. "Computational Prediction of Critical Temperatures of Superconductors Based on Convolutional Gradient Boosting Decision Trees." IEEE Access 8 (2020): 57868-57878.
+[^3]: Li, Shaobo, Yabo Dan, Xiang Li, Tiantian Hu, Rongzhi Dong, Zhuo Cao, and Jianjun Hu. "Critical temperature prediction of superconductors based on atomic vectors and deep learning." Symmetry 12, no. 2 (2020): 262.
 
 ### Authors
 
