@@ -10,15 +10,13 @@ Thermal conductivity is a materials property representing how heat is transferre
 
 ### The LTC Prediction methods
 
-The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
-In this section we will briefly explain the idea of the approach and how to use the explorer.
-More details can be found in Hautier et al.[^2]
 
-### The composition based LTC prediction model
+
+#### The composition based LTC prediction model
 
 Our composition model is trained using the Magpie descriptors from the Matminer package [^3] together with the Roost neural network model [^4]. 
 
-### The deep graph neural network model for LTC prediction
+#### The deep graph neural network model for LTC prediction
 
 Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^5], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
 
