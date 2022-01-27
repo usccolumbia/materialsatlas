@@ -6,7 +6,7 @@
 
 ### Background 
 
-Tinkering and doping are two common ways to optimize an existing material or find a better alternative. This web app allow the users to generate all chemically valid compositions of a given chemical system defined by a materials formula or a set of elements. It outputs the formulas, corresponding oxidation states, electronegativity and a predicted formation energy so that you can rank the results by their chemical feasiblity.
+Tinkering and doping are two common ways to optimize an existing material or find a better alternative. This web app allows the users to generate all chemically valid compositions of a given chemical system defined by a materials formula or a set of elements. It outputs the formulas, corresponding oxidation states, electronegativity and a predicted formation energy so that you can rank the results by their chemical feasiblity.
 
 ### The composition enumeration Method
 
