@@ -1,97 +1,53 @@
-Charge Neutrality Check
+# Charge Neutrality Check
+#### by Dr. Hu
 
-# Battery Explorer Manual
+## Manual
 
-## Introduction
+### Background 
 
-The Battery Explorer is a customized tool to search the Materials Project database for battery materials satisfying various critical criteria such as voltage, capacity, stability and energy density.
+The law of electron charge neutrality states that in any single ionic solution a sum of negative electrical charges attracts an equal sum of positive electrical charges. Here charge neutrality is used as a basic chemical validity test of hypothetical materials compositions. This criterion has been used in our recent study of generative design of new materials compositions [^2].
 
-Currently, this app contains more than 4,000 intercalation compounds and 16,000 conversion compounds with different types of working ions (such as Li, Mg, Zn, Al and more).
-These numbers will increase as new compounds are continuously added to the database, including many new structural predictions.
 
-## Searching Using the Battery Explorer
+### The charge neutrality checking Method
 
-The battery explorer is designed to help battery scientists find electrode materials of interest.
-There are a number of search fields that can be used to filter all the battery material entries to customize the results returned.
-Every battery material entry compiles multiple material entries that represent a given battery electrode at different states of charge and the corresponding data analysis to predict useful battery properties such as voltage or change in volume.
+We use the charge neutrality check filter as implemented in the SMACT package. In this method, for a given composition, it firsts obtain the oxidation states of each element and then it exhaustively enumerate the possible oxidation states to see if all the elemental ratios weighted charges can be summed to 0 or below a threshold. The details are shown in [^1]. 
 
-The search bar above the periodic table in the battery explorer app can be used to search for battery material entries based on the composition (either by typying into the search bar or clicking on the periodic table to specify elements), by Material ID, or by Battery ID.
-In the toolbar to the right of the periodic table, there are a number of additional criteria that can be used to filter the results:
 
-- Number of Elements (including the working ion)
-- Excluded Elements
-- Toggle select between Intercalation Compounds or Conversion Compounds
-- Type of Working Ion
-- Average Voltage in V with respect to the voltage of the pure metal for the corresponding working ion
-- Volumetric Capacity in Ah/L
-- Gravimetric Capacity (also known as Specific Capacity) in (mAh/g)
 
-At the bottom of the toolbar to the right of the periodic table, a number of advanced search options can be expanded:
+### Performance and Limitations
 
-- Max Voltage Step in V
-- Max Volume Change in fractional units (for example 1 corresponds to 100% volume change)
-- Max Instability in eV/atom determined from the energy above hull metric (see glossary for more information)
+For complex composition with a large number of atoms, the calculation process may be slow. We limit the number of elements in the composition to be less than 9. 
 
-## The Search Results Table
+### Using the charge neutrality checking tool
 
-The search results table presents the resulting battery material entries from your search.
-You can add or hide fields from the result table by clicking the "Show/ hide columns" button and filter the results based on these fields by clicking the arrow in the column of interest.
-There are also buttons to print or export the Search Results Table to save your results for future reference.
+#### Entering Inputs
 
-To investigate an individual battery material entry, click on one of the rows in the Search Results Table.
-This will open a new page containing a detailed summary for that entry including links and additional information for each material entry associated with a given battery material entry and data analysis such as the predicted voltage profile, oxidative stability, volume change, etc.
+Practically, the procedure consists in 3 steps
 
-## Viewing Details of a Battery Material
+1. input formula in the input box or upload a csv file with a list of materials formulas.
+2. click "Check Now"
 
-Within a single battery material entry, each associated material entry is dedicated to one structural framework that represents a different state of charge or working ion intercalation level (e.g. $\ce{Mn2O4}$ spinel, $\ce{Li0.5Mn2O4}$ spinel, or $\ce{LiMn2O4}$ spinel).
-These entries have been grouped together into a single battery material entry by comparing the structure frameworks with the working ion(s) removed to match similar host lattices.
-The details view has many components and more detailed data analysis from these grouped entries (including interactive plots and features) which are described below.
 
-### Voltage Curve
+#### Interpreting the Results
 
-The voltage curve graph displays the calculated equilibrium voltage versus state of charge.
-If voltage criteria were specified in the query, the line might be segmented into different colors.
-Try hovering over points on the voltage curve plot with your mouse for more details on that data point.
+The result will show if the material has passed the charge neutrality check or not.
 
-### O<sub>2</sub> Evolution Curve
+### Future features
 
-One concern for battery electrode design is resistance to $\ce{O_2}$ release, as $\ce{O_2}$ release from an electrode can lead to thermal runaway which is a safety hazard.
-The $\ce{O_2}$ evolution diagram determines the equilibrium chemical potentials at which $\ce{O_2}$ release can be expected, and the amount of $\ce{O_2}$ released[^1][^2].
-One way to read this chart is to look at the chemical potential at which $\ce{O_2}$ release begins (the first x-value for which the y-axis is greater than zero).
-Compounds for which O2 release begins at more negative muO2 are more stable with respect to $\ce{O_2}$ release.
-The $\mu_\ce{O_2}$ needed for release can be referenced against established battery compounds to get an idea of stability to $\ce{O_2}$ release.
-This plot is interactive so you can hover over a data point with your mouse for more detailed information.
+New algorithms will be developed to significantly speed up the query process or complex formulas.
 
-### Structure Viewer
+### Citations
 
-For viewing convenience, there is a drop down list below the structure viewer window where you can select the structure of each material entries associated with a battery material entry.
+If you use this app, please cite the web App, and reference the following works:
 
-### Overall Battery Material Properties
+- D. W. Davies et al, "Computational screening of all stoichiometric inorganic materials" Chem 1, 617 (2016).
+- Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
-The overall battery materials properties display aggregate or average properties derived from all states of charge (e.g. intercalation levels) for a given structural framework.
-Note that some intercalation levels presented in this section may be outside the desired range of voltage, stability, or safety.
-More details are given in the 'Voltage pair properties' section.
 
-### Voltage Pair Properties
+[^1]: https://smact.readthedocs.io/en/latest/_modules/smact/screening.html#smact_filter
+[^2]: Dan, Yabo, Yong Zhao, Xiang Li, Shaobo Li, Ming Hu, and Jianjun Hu. "Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials." npj Computational Materials 6, no. 1 (2020): 1-7.
 
-This table displays calculated data for each voltage step along the voltage profile.
-In each row, the two material entries associated with a single voltage step and the corresponding properties (volume change, capacity, voltage, etc.) are displayed.
-Click on the composition of one of the materials listed to be directed to that material entry.
+### Authors
 
-## Authors
+- Dr. Jianjun Hu
 
-1. Shyue Ping Ong
-2. Anubhav Jain
-3. Stefan Adams (diffusion data)
-4. Eric Sivonxay
-5. Jimmy Shen
-6. Ann Rutt
-
-## References
-
-[^1]: S. P. Ong, L. Wang, B. Kang, G. Ceder., The Li-Fe-P-O2 Phase Diagram from First Principles Calculations, Chemistry of Materials, vol. 20, Mar. 2008, pp. 1798-1807. [doi:10.1021/cm702327g](https://doi.org/10.1021/cm702327g)
-[^2]: S.P. Ong, A. Jain, G. Hautier, B. Kang, and G. Ceder, Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochemistry Communications, vol. 12, 2010, pp. 427-430. [doi:10.1016/j.elecom.2010.01.010](https://doi.org/10.1016/j.elecom.2010.01.010)
-[^3]: S. Adams, Solid State Ionics 177, 1625 (2006).
-[^4]: S. Adams, Acta Crystallogr. B, Struct. Sci. 57, 278 (2001).
-[^5]: S. Adams and R. Prasada Rao, Phys. Chem. Chem. Phys. 11, 3210 (2009).
-[^6]: S. Adams and R. P. Rao: High power Li ion battery materials by computational design; Phys. Status Solidi A 208, 1746–1753 (2011). [doi:10.1002/pssa.201001116](https://doi.org/10.1002/pssa.201001116)
