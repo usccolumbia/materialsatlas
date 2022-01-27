@@ -26,7 +26,7 @@ Practically, the procedure consists in 3 steps
 
 1. input formula in the input box or upload a csv file with a list of materials formulas.
 2. click "Check Now"
-
+3. The app will show which formulas have passed the charege neutrality check.
 
 #### Interpreting the Results
 
