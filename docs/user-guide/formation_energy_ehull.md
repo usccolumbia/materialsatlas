@@ -9,7 +9,7 @@ The formation energy of a material defines the energy required to dissociate tha
 
 It should also be mentioned that a higher accuracy for predicting formation energy can be achieved based on the graph neural networks if the crystal structure is available. This is a very important tool if we want to find the formation energy of a material when the energy information is not accessible. 
 
-Therefore, we provide both composition-based and structure-based options for predicting the formation energy using MaterialsAtals.org. You can submit either the cif file of the crystal structure or enter the chemical formula to determine the prediction.
+Therefore, we provide both composition-based and structure-based options for predicting the formation energy using MaterialsAtals.org. You can submit either the cif file of the crystal structure or enter the chemical formula to perform the predictions.
 
 
 ### Citations
