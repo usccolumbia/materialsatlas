@@ -8,7 +8,11 @@
 
 ### Background
 
-Hardness is a materials property with wide applications such as machine tools and electronics. A variety of machine learning models have been developed with both composition and structural desriptors for thermal conductivity prediction as reviewed in [^1]. However, the key challenge of thermal conductivity prediction is the limited number labelled data samples. Quite a few studies have used from 80 to <200 labelled samples and demonstrated good (over-estimated) performance, which only interploate well within their highly redundant data set. Here we trained  composition based and structure based (using graph neural networks) thermal prediction models using a dataset with ~2700 samples [^2] with calculated thermal conductivity. 
+Hardness is a materials property with wide applications It is the ability of a material to resist localized plastic
+deformations which include indentation, scratching, densification, and fracture. Superhard materials (those that
+have hardness above 40 GPa) are used in many industrial applications including cutting, drilling, and polishing technologies. Predicting new superhard materials without performing many trial-and-error experiments is of great interest to industry. 
+
+A variety of machine learning models have been developed with both composition and structural desriptors for hardness conductivity prediction such as [^1],[^6], [^7]. Here we use the hardness data from the MaterialsProject database to train a composition machine learning model and a deep graph neural network model with structure for hardness prediction.
 
 
 ### The Materials Hardness Prediction methods
@@ -25,7 +29,7 @@ Our structure based hardness prediction model is based on our latest work of Dee
 
 ### Performance and Limitations
 
-The MAE of our composition ML model on the hold-out test set is xxxxx. 
+The MAE of our composition ML model on the hold-out test set is xxxxx. <br>
 The MAE of our structure ML model on the hold-out test set is xxxxx. 
 
 ### Using the Hardness Predictor
