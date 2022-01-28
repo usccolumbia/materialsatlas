@@ -8,7 +8,7 @@
 
 ### Background
 
-Hardness is a materials property representing how heat is transferred from one side of a material to the other when thermal energy is applied. It is an important physical quantity in terms of many applications for better thermal management to ensure the performance, life-time, and safety for thermoelectric energy conversion devices, and spintronics technology. Thermal conductivity are controlled by both electron and lattice (phonon) contributions. Currently, first principles based DFT calculations can be used to compute the thermal conductivity for crystal materials, but it is slow or even not feasible for materials with large number of atoms within the unit cell. A variety of machine learning models have been developed with both composition and structural desriptors for thermal conductivity prediction as reviewed in [^1]. However, the key challenge of thermal conductivity prediction is the limited number labelled data samples. Quite a few studies have used from 80 to <200 labelled samples and demonstrated good (over-estimated) performance, which only interploate well within their highly redundant data set. Here we trained  composition based and structure based (using graph neural networks) thermal prediction models using a dataset with ~2700 samples [^2] with calculated thermal conductivity. A dataset with 872 experimentally determined LTC values are also available at [^6].
+Hardness is a materials property with wide applications such as machine tools and electronics. A variety of machine learning models have been developed with both composition and structural desriptors for thermal conductivity prediction as reviewed in [^1]. However, the key challenge of thermal conductivity prediction is the limited number labelled data samples. Quite a few studies have used from 80 to <200 labelled samples and demonstrated good (over-estimated) performance, which only interploate well within their highly redundant data set. Here we trained  composition based and structure based (using graph neural networks) thermal prediction models using a dataset with ~2700 samples [^2] with calculated thermal conductivity. 
 
 
 ### The Materials Hardness Prediction methods
@@ -21,14 +21,14 @@ Our composition model is trained using the Magpie descriptors from the Matminer 
 
 #### The deep graph neural network model for hardness prediction
 
-Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^5], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
+Our structure based hardness prediction model is based on our latest work of DeeperGATGNN algorithm [^5], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
 
 ### Performance and Limitations
 
 The MAE of our composition ML model on the hold-out test set is xxxxx. 
 The MAE of our structure ML model on the hold-out test set is xxxxx. 
 
-### Using the LTC Predictor
+### Using the Hardness Predictor
 
 #### Entering Inputs
 
@@ -59,12 +59,14 @@ To cite the LTC Predictor App, please reference the following works:
 - Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
 
-[^1]: Ouyang, Y., Yu, C., Yan, G. & Chen, J. Machine learning approach for the prediction and optimization of thermal transport properties. Front. Phys. 16, 43200 (2021).
-[^2]: https://tedesignlab.org/database/
+[^1]: Mansouri Tehrani, Aria, Anton O. Oliynyk, Marcus Parry, Zeshan Rizvi, Samantha Couper, Feng Lin, Lowell Miyagi, Taylor D. Sparks, and Jakoah Brgoch. "Machine learning directed search for ultraincompressible, superhard materials." Journal of the American Chemical Society 140, no. 31 (2018): 9844-9853.
+[^2]: http://www.materialsproject.org
 [^3]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
 [^4]: https://github.com/CompRhys/roost
 [^5]:Omee, Sadman Sadeed, Steph-Yves Louis, Nihang Fu, Lai Wei, Sourin Dey, Rongzhi Dong, Qinyang Li, and Jianjun Hu. "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
-[^6]:https://figshare.com/articles/dataset/Citrine_Thermal_Conductivity_Data/7231202
+[^6]: Avery, Patrick, Xiaoyu Wang, Corey Oses, Eric Gossett, Davide M. Proserpio, Cormac Toher, Stefano Curtarolo, and Eva Zurek. "Predicting superhard materials via a machine learning informed evolutionary structure search." npj Computational Materials 5, no. 1 (2019): 1-11.
+[^7]: Mazhnik, Efim, and Artem R. Oganov. "Application of machine learning methods for predicting new superhard materials." Journal of Applied Physics 128, no. 7 (2020): 075102.
+
 
 ### Authors
 
