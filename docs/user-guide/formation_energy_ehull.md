@@ -7,4 +7,4 @@
 
 The formation energy of a material defines the energy required to dissociate that material into its respective elements. Thus, it indicates the thermodynamic stability against the elements used to form the material. 
 
-      E_form=E_total-x_iE_i
+      $E_{form}=E_{total}-x_{i}E_{i}$
