@@ -9,7 +9,7 @@ The formation energy of a material defines the energy required to dissociate tha
 
 
 
-###Reference
+# Reference
 1. Yuanqing Mao, Hongliang Yang, Ye Sheng, Jiping Wang, Runhai Ouyang, Caichao Ye, Jiong Yang, and Wenqing Zhang, Prediction and Classification of Formation Energies of Binary Compounds by Machine Learning: An Approach without Crystal Structure Information, ACS Omega 2021 6 (22), 14533-14541, DOI: 10.1021/acsomega.1c01517 
            
            
