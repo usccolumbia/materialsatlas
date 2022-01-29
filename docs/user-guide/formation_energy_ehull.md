@@ -13,7 +13,7 @@ Our composition-based model is trained using the Magpie descriptors from the Mat
 ### Structure-based Model
 Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction.
 
-### Using the Formation Energy Predictor
+### Using the Formation Energy Predictors
 
 
 # Energy-Above-Hull
