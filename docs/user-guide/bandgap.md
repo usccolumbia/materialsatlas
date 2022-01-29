@@ -7,7 +7,7 @@
 
 ### Background
 
-The band gap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The band gaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 4 eV)[^1]. The band gap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in the valence region are not contributing to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor [^2]. The semiconductors with band gaps larger than 2 eV are known as wide band gap semiconductors. Those are much useful for producing devisors operated at high temperatures and frequencies [^3]. 
+The band gap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The band gaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 4 eV)[^1]. The band gap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The valence region electrons do not contribute to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor [^2]. The semiconductors with band gaps larger than 2 eV are known as wide band gap semiconductors. Those are much useful for producing devisors operated at high temperatures and frequencies [^3]. 
 
 
 
