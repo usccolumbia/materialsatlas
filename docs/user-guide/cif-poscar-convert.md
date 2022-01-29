@@ -14,9 +14,9 @@ This is a simple utility to convert the crystal structure file formats between c
 Practically, the procedure consists in 4 steps
 
 1. Choose conversion direction: Cif to Poscar or Poscar to Cif
-2. Upload a Cif or Poscar file and input email for notification when conversion is done
+2. Upload a Cif or Poscar file and input email for notification 
 3. Click "Convert Now" button
-4. Download the result file
+4. Download the result file when conversion is done
 
 
 ### Citations
