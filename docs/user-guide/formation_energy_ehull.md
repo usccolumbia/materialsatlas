@@ -1,8 +1,8 @@
 # Formation Energy and E-above-hull Check
 #### by Dilanga Siriwardane
 
-## Manual
-
+# Manual
+## Formation Energy 
 ### Background
 
 The formation energy of a material defines the energy required to dissociate that material into its respective elements. Thus, it indicates the thermodynamic stability against the elements it consists of. Usually, the density functional theory (DFT) based first-principles calculations are performed to calculate the formation energy. It is required to identify the crystal structure data in advance for that purpose. However, the ground state structures are unknown for most of the compositions. Therefore, it is difficult to determine the formation energy of a new composition using DFT. Another disadvantage of the above method is that the first-principles calculation of formation energy is time-consuming and expensive [^1]. As a solution, machine learning models are trained based on the elemental and electronic properties of the available compositions in the materials databases. It should also be mentioned that a higher accuracy for predicting formation energy can be achieved using the graph neural networks if the crystal structure is available. This is a very important tool if we want to find the formation energy of a material when the energy information is not accessible [^2] [^3]. Therefore, we provide both composition-based and structure-based options for predicting the formation energy using MaterialsAtals.org. You can submit either the cif file of the crystal structure or the chemical formula to perform the predictions.
@@ -15,6 +15,8 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 
 ### Using the Formation Energy Predictor
 
+
+# Energy-Above-Hull
 
 Formation energy indicates only whether the material is stable with respect to the parent materials of each element of it. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases.  
 
