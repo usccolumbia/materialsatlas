@@ -10,41 +10,32 @@ Elascticity is a materials property representing how heat is transferred from on
 
 
 ### The Elastic Moduli Prediction method
+
 We propose to use electronic charge density (ECD) as a generic unified 3D descriptor for materials property prediction with the advantage of possessing close relation with the physical and chemical properties of materials and developed an ECD-based 3D convolutional neural networks (CNNs) for predicting the elastic properties of materials, in which CNNs can learn effective hierarchical features with multiple convolving and pooling operations. Since physical and chemical properties of materials are related to the transferability between atoms (nuclei) and the presence of electronic charges or electronic multipoles on atoms or molecules, extraction of informative features from materials ECD can help predict materials properties. 
 
 ### Performance and Limitations
 
-The MAE of our composition ML model on the hold-out test set is xxxxx. 
-The MAE of our structure ML model on the hold-out test set is xxxxx. 
+Table2: The results from fivefold cross validation on the whole data set with 2170 samples.
+<img src="img/Elastic_1.png" width=800>
 
 ### Using the Elastic Moduli Predictor
 
 #### Entering Inputs
 
-Practically, the procedure for getting predictions consists in 3 steps
+Practically, the procedure for getting predictions consists in 4 steps
 
-1. Provide a csv file of formulas or provide 1 or more material formulas separated by comma or space (no processing if file uploaded).
-2. Click "Check Now".
-3. Collect the results by cliking the "Download the Results" Link.
-
-
-
-1. Input a material formula or a csv with a list of formulas. It will automatically use the composition machine learning model. You can also upload a structure cif file, it will select the graph neural network model accordingly. 
-
-2. click "predict now"
-
-3. collect the result or download the results csv file.
-
-
+1. Provide a csv file of formulas or a cif file Or provide 1 or more material formulas separated by comma or space (no processing if file uploaded)
+2. Select elastic properties by clicking Bulk mod, Shear mode, Young's mod, or Poisson ratio
+3. Click "Check Now".
+4. Collect the results by cliking the "Download Results" Link.
 
 #### Interpreting the Results
 
-
-
+The results contains Composition and Elastic Moduli Predicted (Pa).
 
 ### Future features
 
-In the future, we want to further improve the performance of our model using transfer learning and semi-supervised learning. 
+In the future, Currently, we want to generate more ECD data sets with more space groups to extend this method to more materials with diverse structures.
 
 ### Citations
 
@@ -64,3 +55,4 @@ To cite the LTC Predictor App, please reference the following works:
 ### Authors
 
 - Jianjun Hu
+- Lai Wei
