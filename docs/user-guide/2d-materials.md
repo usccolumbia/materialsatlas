@@ -26,7 +26,7 @@ forest model training.
 
 #### Entering Inputs
 
-Practically, the procedure for getting predictions consists in 3 steps
+Practically, the procedure for getting predictions consists in 4 steps
 
 1. Provide a csv file of formulas or provide 1 or more material formulas separated by comma or space (no processing if file uploaded)
 2. Click "Check Now"
@@ -34,7 +34,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 4. Download detailed results by clicking link
 
 #### Interpreting the Results
-
+The result contains formula, label and probability
 <img src="img/2d_result.png" width=400>
 
 ### Future features
