@@ -63,7 +63,7 @@ To cite the Structure Predictor App, please reference the following works:
 
 [^4]: Jha, D.; Ward, L.; Paul, A.; Liao, W.-k.; Choudhary, A.; Wolverton, C.; Agrawal, A. ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition. Sci. Rep. 2018, 8, 17593.
 
-J.Hu, S.Stefano, Y.Song and etc. 2021. MaterialsAtlas.org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. https://arxiv.org/abs/2109.04007
+[^5]J.Hu, S.Stefano, Y.Song and etc. 2021. MaterialsAtlas.org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art. https://arxiv.org/abs/2109.04007
 
 Li, Yuxin, Wenhui Yang, Rongzhi Dong, and Jianjun Hu. "MLatticeABC: generic lattice constant prediction of crystal materials using machine learning." ACS omega 6, no. 17 (2021): 11585-11594.
 
