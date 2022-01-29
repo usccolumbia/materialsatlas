@@ -7,7 +7,7 @@
 
 The formation energy of a material defines the energy required to dissociate that material into its respective elements. Thus, it indicates the thermodynamic stability against the elements it consists of. Usually, the density functional theory (DFT) based first-principles calculations are performed to calculate the formation energy. It is required to identify the crystal structure data in advance for that purpose. However, the ground state structures are unknown for most of the compositions. Therefore, it is difficult to determine the formation energy of a new composition using DFT. Another disadvantage of the above method is that the first-principles calculation of formation energy is time-consuming and expensive [^1]. As a solution, machine learning models are trained based on the elemental and electronic properties of the available compositions in the materials databases. 
 
-It should also be mentioned that a higher accuracy for predicting formation energy can be achieved using the graph neural networks if the crystal structure is available. This is a very important tool if we want to find the formation energy of a material when the energy information is not accessible [^2] [^3]. 
+It should also be mentioned that a higher accuracy for predicting formation energy can be achieved using the graph neural networks if the crystal structure is available. This is a very important tool if we want to find the formation energy of a material when the energy information is not accessible [^2] [^3]. Our composition model is trained using the Magpie descriptors from the Matminer package 4 together with the Roost neural network model [^4]. 
 
 Therefore, we provide both composition-based and structure-based options for predicting the formation energy using MaterialsAtals.org. You can submit either the cif file of the crystal structure or the chemical formula to perform the predictions.
 
@@ -21,5 +21,6 @@ Formation energy indicates only whether the material is stable with respect to t
            
 [^3]: Louis,S., Zhao, Y., Nasiri, A., Wang, X., Song, Y., Liu, F.  Hu, J., Royal Society of Chemistry (RSC), Physical Chemistry Chemical Physics, 2020, 18141-18148, DOI: 10.1039/d0cp01474e
 
+[^4]: Goodall, R.E.A., Lee, A.A. Predicting materials properties without crystal structure: deep representation learning from stoichiometry. Nat Commun 11, 6280 (2020). https://doi.org/10.1038/s41467-020-19964-7
            
 
