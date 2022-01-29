@@ -12,7 +12,7 @@ and technologies such as spintronics, catalysis, and membranes owing to their ex
 
 ### The 2D materials classification model:
 
-we employ the Random Forest (RF)  as the surrogate model for predicting the 2D probability given a
+We employ the Random Forest (RF)  as the surrogate model for predicting the 2D probability given a
 material’ Magpie composition features [^3]. Magpie feature set is calculated using the matminer library which
 is a Python-based platform that facilitates data-driven methods for analyzing and predicting material properties by
 calculating a variety of descriptors from material compositions or crystal structures. Magpie feature set summarizes 132
@@ -21,6 +21,8 @@ mean absolute deviation of valence. Those 132 features of each material will be 
 forest model training.
 
 ### Performance and Limitations
+
+<img src="img/2d_results.png" width=600>
 
 ### Using the 2D material Predictor
 
@@ -40,14 +42,14 @@ The result contains formula, label and probability
 
 ### Future features
 
-In the future, we want to We want to improve performance with more advanced algorithm based on graph neural network.
+In the future, we want to improve performance with more advanced algorithm based on graph neural network.
 
 ### Citations
 
 To cite the Structure Predictor App, please reference the following works:
 
 - Song, Yuqi, Edirisuriya M. Dilanga Siriwardane, Yong Zhao, and Jianjun Hu. "Computational discovery of new 2D materials using deep learning generative models." ACS Applied Materials & Interfaces (2021).
-- Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
+- Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, Yong Zhao and Lai Wei. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
 [^1]: Song, Yuqi, Edirisuriya M. Dilanga Siriwardane, Yong Zhao, and Jianjun Hu. "Computational discovery of new 2D materials using deep learning generative models." ACS Applied Materials & Interfaces (2021).
 [^2]: Dan, Yabo, Yong Zhao, Xiang Li, Shaobo Li, Ming Hu, and Jianjun Hu. "Generative adversarial networks (GAN) based efficient sampling of chemical composition space for inverse design of inorganic materials." npj Computational Materials 6, no. 1 (2020): 1-7.
