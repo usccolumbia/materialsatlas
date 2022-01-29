@@ -7,7 +7,7 @@
 
 ### Background
 
-The bandgap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The bandgaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 5 eV). The bandgap acts as an forbidned gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in valence region are not contributing for electric current while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor. 
+The bandgap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The bandgaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 5 eV). The bandgap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in the valence region are not contributing to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor. 
 
 
 
