@@ -23,10 +23,10 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 
 ### Background
 
-Formation energy indicates only whether the material is stable with respect to the parent materials of each element. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases. Here, we are using the pymatgen code to compute energy-above-hull [^7][^8].
+Formation energy indicates only whether the material is stable with respect to the parent materials of each element. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases. Here, we use the pymatgen code to compute energy-above-hull [^7][^8].
 
 ### Using the Energy-Above-Hull Calculator
-1. Mention the formula and the corrected energy per atom obtained from DFT in the text box. 
+1. Mention the formula and the corrected energy per atom obtained from DFT in the text box. Please refer ref. [^9] for more information. 
 2. Press 'Check Now' button.
 
 
@@ -47,6 +47,8 @@ K., Snyder, G. J., Foster, I., Jain, A., Matminer: An open source toolkit for ma
 [^7]: Ong, S. P.; Wang, L.; Kang, B.; Ceder, G. Li−Fe−P−O2 Phase Diagram from First Principles Calculations, Chem. Mater., 2008, 20, 1798–1807, doi:10.1021/cm702327g.
 
 [^8]: Ong, S. P.; Jain, A.; Hautier, G.; Kang, B.; Ceder, G. Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first\ principles calculations, Electrochem. commun., 2010, 12, 427–430, doi:10.1016/j.elecom.2010.01.010.
+
+[^9]: https://pymatgen.org/pymatgen.analysis.phase_diagram.html
 
            
 
