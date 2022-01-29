@@ -7,15 +7,15 @@
 
 The formation energy of a material defines the energy required to dissociate that material into its respective elements. Thus, it indicates the thermodynamic stability against the elements it consists of. Usually, the density functional theory (DFT) based first-principles calculations are performed to calculate the formation energy. It is required to identify the crystal structure data in advance for that purpose. However, the ground state structures are unknown for most of the compositions. Therefore, it is difficult to determine the formation energy of a new composition using DFT. Another disadvantage of the above method is that the first-principles calculation of formation energy is time-consuming and expensive [^1]. As a solution, machine learning models are trained based on the elemental and electronic properties of the available compositions in the materials databases. It should also be mentioned that a higher accuracy for predicting formation energy can be achieved using the graph neural networks if the crystal structure is available. This is a very important tool if we want to find the formation energy of a material when the energy information is not accessible [^2] [^3]. Therefore, we provide both composition-based and structure-based options for predicting the formation energy using MaterialsAtals.org. You can submit either the cif file of the crystal structure or the chemical formula to obtain the predictions.
 
-### Composition-based Model
+### Composition-based formation energy prediction Model
 Our composition-based model is trained using the Magpie descriptors from the Matminer package[^4] together with the Roost neural network model [^5]. 
 
-### Structure-based Model
-Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction.
+### Structure-based formation energy prediction Model
+Our structure based formation energy prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction.
 
-### Using the Formation Energy Predictors
+### Using the Formation Energy Predictor
 
-1. Upload the .cif file or enter the reduced chemical formula in the text box.
+1. Upload a cif file or enter the reduced chemical formula in the text box.
 2. Press 'Check Now' button.
 
 
@@ -28,7 +28,16 @@ Formation energy indicates only whether the material is stable with respect to t
 ### Using the Energy-Above-Hull Calculator
 1. Mention the formula and the corrected energy per atom obtained from DFT in the text box. Please refer ref. [^9] for more information. 
 2. Press 'Check Now' button.
+3. Get the calculated e-hull energy.
 
+### Interpret the results
+
+If everything goes well, the formula and the calculated e-hull energy will be reported and can be downloaded as csv file.
+If there is no output, usually it means the materials may cannot be decomposed into other materials and thus have e_hull energy less than 0. 
+
+
+### Performance and limitation
+One must be aware that the E-above-hull calculation is very sensitive to the calculated total energy values which again strongly depends on the parameters used in DFT simulation. So to use this app, one must make sure you use the same DFT calculation setting as MaterialsProject. Check details here [^10].
 
 ### Citations
 [^1]: Mao, Y., Yang, H, Sheng, Y., Wang, J., Ouyang, R., Ye, C., Yang, J. and Zhang, W. Prediction and Classification of Formation Energies of Binary Compounds by Machine Learning: An Approach without Crystal Structure Information, ACS Omega, 2021 6 (22), 14533-14541, DOI: 10.1021/acsomega.1c01517 
@@ -49,6 +58,8 @@ K., Snyder, G. J., Foster, I., Jain, A., Matminer: An open source toolkit for ma
 [^8]: Ong, S. P.; Jain, A.; Hautier, G.; Kang, B.; Ceder, G. Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochem. commun., 2010, 12, 427–430, doi:10.1016/j.elecom.2010.01.010.
 
 [^9]: https://pymatgen.org/pymatgen.analysis.phase_diagram.html
+
+[^10]: https://docs.materialsproject.org/methodology/total-energies/
 
            
 
