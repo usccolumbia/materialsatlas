@@ -20,7 +20,9 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 
 ### Background
 
-Formation energy indicates only whether the material is stable with respect to the parent materials of each element. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases.  
+Formation energy indicates only whether the material is stable with respect to the parent materials of each element. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases. Here, we are using the pymatgen code to compute energy-above-hull [^7][^8].
+
+### Using the Energy-Above-Hull Calculator
 
 
 ### Citations
@@ -36,5 +38,10 @@ K., Snyder, G. J., Foster, I., Jain, A., Matminer: An open source toolkit for ma
 [^5]: Goodall, R.E.A., Lee, A.A. Predicting materials properties without crystal structure: deep representation learning from stoichiometry. Nat Commun 11, 6280 (2020). https://doi.org/10.1038/s41467-020-19964-7
 
 [^6]: Omee, Sadman Sadeed, Steph-Yves Louis, Nihang Fu, Lai Wei, Sourin Dey, Rongzhi Dong, Qinyang Li, and Jianjun Hu. "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
+
+[^7]: Ong, S. P.; Wang, L.; Kang, B.; Ceder, G. Li−Fe−P−O2 Phase Diagram from First Principles Calculations, Chem. Mater., 2008, 20, 1798–1807, doi:10.1021/cm702327g.
+
+[^8]: Ong, S. P.; Jain, A.; Hautier, G.; Kang, B.; Ceder, G. Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first\ principles calculations, Electrochem. commun., 2010, 12, 427–430, doi:10.1016/j.elecom.2010.01.010.
+
            
 
