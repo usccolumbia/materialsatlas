@@ -63,5 +63,5 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### Authors
 
-- Weilai
+- Wei Lai
 - Jianjun Hu
