@@ -13,10 +13,11 @@ Therefore, we provide both composition-based and structure-based options for pre
 
 
 ### Citations
-[^1] Mao, Y., Yang, H, Sheng, Y., Wang, J., Ouyang, R., Ye, C., Yang, J. and Zhang, W. Prediction and Classification of Formation Energies of Binary Compounds by Machine Learning: An Approach without Crystal Structure Information, ACS Omega 2021 6 (22), 14533-14541, DOI: 10.1021/acsomega.1c01517 
+[^1] Mao, Y., Yang, H, Sheng, Y., Wang, J., Ouyang, R., Ye, C., Yang, J. and Zhang, W. Prediction and Classification of Formation Energies of Binary Compounds by Machine Learning: An Approach without Crystal Structure Information, ACS Omega, 2021 6 (22), 14533-14541, DOI: 10.1021/acsomega.1c01517 
 
-[^2] Xie, T. and Grossman, J., 2018. Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties. Physical Review Letters, 120(14).
+[^2] Xie, T. and Grossman, J., Crystal Graph Convolutional Neural Networks for an Accurate and Interpretable Prediction of Material Properties, Physical Review Letters,  2018, 120(14).
            
-           
+[^3]Louis,S., Zhao, Y., Nasiri, A., Wang, X., Song, Y., Liu, F.  Hu, J., Royal Society of Chemistry (RSC), Physical Chemistry Chemical Physics, 2020, 18141-18148, DOI: 10.1039/d0cp01474e
+
            
 
