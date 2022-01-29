@@ -63,13 +63,11 @@ _Figure 3: Procedure for proposing new compound candidates in a quaternary syste
 
 Practically, the procedure for getting predictions consists in 3 steps
 
-1. Enter a formula/composition
+1. Enter a formula/composition or upload a cif structure file
 
-2. or upload a cif structure file
-
-3. Start the prediction: click 'Check Now' to begin the validation process.
+2. Start the prediction: click 'Check Now' to begin the validation process.
    
-4. Examine results: Upon completion of the task, you will be given a link to 
+3. Examine results: Upon completion of the task, you will be given a link to download the results.
 
 #### Interpreting the Results
 
