@@ -1,5 +1,5 @@
 
-# Bandgap Predictor
+# Band gap Predictor
 
 #### by Dr. Hu
 
@@ -7,7 +7,7 @@
 
 ### Background
 
-The bandgap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The bandgaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 5 eV). The bandgap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in the valence region are not contributing to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor. 
+The band gap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The band gaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 4 eV)[^1]. The band gap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in the valence region are not contributing to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor. 
 
 
 
@@ -60,12 +60,13 @@ To cite the LTC Predictor App, please reference the following works:
 - Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
 
-[^1]: Ouyang, Y., Yu, C., Yan, G. & Chen, J. Machine learning approach for the prediction and optimization of thermal transport properties. Front. Phys. 16, 43200 (2021).
+[^1]:  Babu, V.Suresh (2010). Solid State Devices and Technology, 3rd Edition. Peason.
 [^2]: https://tedesignlab.org/database/
 [^3]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
 [^4]: https://github.com/CompRhys/roost
 [^5]:Omee, Sadman Sadeed, Steph-Yves Louis, Nihang Fu, Lai Wei, Sourin Dey, Rongzhi Dong, Qinyang Li, and Jianjun Hu. "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
 [^6]:https://figshare.com/articles/dataset/Citrine_Thermal_Conductivity_Data/7231202
+
 
 ### Authors
 
