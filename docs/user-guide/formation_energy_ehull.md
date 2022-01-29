@@ -24,7 +24,8 @@ Formation energy indicates only whether the material is stable with respect to t
 
 ### Using the Energy-Above-Hull Calculator
 1. Create .csv file with name formula-energy.csv, where 'formula' must be replaced with the reduced chemical formula of the target material. The first column must contain the competing phases and the second column must have the respective energy per atom values obtained from DFT. 
-2. Mention the formula and the energy per atom obtained from DFT. 
+2. Mention the formula and the energy per atom obtained from DFT in the text box. 
+3. Press 'Check Now' button.
 
 
 ### Citations
