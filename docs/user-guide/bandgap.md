@@ -7,7 +7,7 @@
 
 ### Background
 
-The band gap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The band gaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 4 eV)[^1]. The band gap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in the valence region are not contributing to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor [^2]. 
+The band gap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The band gaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 4 eV)[^1]. The band gap acts as a forbidden gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in the valence region are not contributing to electric current, while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor [^2]. The semiconductors with band gaps larger than 2 eV are known as wide band gap semiconductors. Those are much useful for producing devisors operated at high temperatures and frequencies [^3]. 
 
 
 
@@ -18,11 +18,11 @@ The band gap is the energy difference between the valence band maximum (VBM) and
 
 #### The composition based LTC prediction model
 
-Our composition model is trained using the Magpie descriptors from the Matminer package [^3] together with the Roost neural network model [^4]. 
+Our composition model is trained using the Magpie descriptors from the Matminer package [^4] together with the Roost neural network model [^5]. 
 
 #### The deep graph neural network model for LTC prediction
 
-Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^5], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
+Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
 
 ### Performance and Limitations
 
@@ -61,7 +61,8 @@ To cite the LTC Predictor App, please reference the following works:
 
 
 [^1]:  Babu, V.Suresh (2010). Solid State Devices and Technology, 3rd Edition. Peason.
-[^2]: Roberts, G.G., Apsley, N., & Munn, R.W. (1980). Temperature dependent electronic conduction in semiconductors. Physics Reports, 60(2), 61-150. 
+[^2]: Roberts, G.G., Apsley, N., & Munn, R.W. (1980). Temperature dependent electronic conduction in semiconductors. Physics Reports, 60(2), 61-150.
+[^3]: Michael Shur, Wide band gap semiconductor technology: State-of-the-art, Solid-State Electronics, 155,65-75, https://doi.org/10.1016/j.sse.2019.03.020 (2019).
 [^3]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
 [^4]: https://github.com/CompRhys/roost
 [^5]:Omee, Sadman Sadeed, Steph-Yves Louis, Nihang Fu, Lai Wei, Sourin Dey, Rongzhi Dong, Qinyang Li, and Jianjun Hu. "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
