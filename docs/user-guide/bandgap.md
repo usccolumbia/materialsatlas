@@ -1,5 +1,5 @@
 
-# Band gap Predictor
+# Band Gap Predictor
 
 #### by Dr. Hu
 
