@@ -15,6 +15,9 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 
 ### Using the Formation Energy Predictors
 
+1. Upload the .cif file or enter the reduced chemical formula in the text box.
+2. Press 'Check Now' button.
+
 
 ## Energy-Above-Hull
 
@@ -23,8 +26,6 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 Formation energy indicates only whether the material is stable with respect to the parent materials of each element. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases. Here, we are using the pymatgen code to compute energy-above-hull [^7][^8].
 
 ### Using the Energy-Above-Hull Calculator
-%1. Create .csv file with name formula-energy.csv, where 'formula' must be replaced with the reduced chemical formula of the target material. The first column %must contain the competing phases and the second column must have the respective energy per atom values obtained from DFT. 
-
 1. Mention the formula and the corrected energy per atom obtained from DFT in the text box. 
 2. Press 'Check Now' button.
 
