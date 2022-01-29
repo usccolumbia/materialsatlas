@@ -1,6 +1,6 @@
 
 # Elastic Moduli Predictor
-#### by Dr. Hu
+#### by Wei Lai
 
 ## Manual
 
