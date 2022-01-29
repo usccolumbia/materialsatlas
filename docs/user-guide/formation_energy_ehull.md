@@ -16,7 +16,9 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 ### Using the Formation Energy Predictors
 
 
-# Energy-Above-Hull
+## Energy-Above-Hull
+
+### Background
 
 Formation energy indicates only whether the material is stable with respect to the parent materials of each element. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases.  
 
