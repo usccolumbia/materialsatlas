@@ -30,7 +30,7 @@ Practically, the procedure for getting predictions consists in 4 steps
 
 1. Provide a csv file of formulas or provide 1 or more material formulas separated by comma or space (no processing if file uploaded)
 2. Click "Check Now"
-3. Check if a crystal material with a given formula is a 2D or layered material and print the following 2D materials are found
+3. Check if a crystal material with a given formula is a 2D or layered material and print the 2D materials formulas
 4. Download detailed results by clicking link
 
 #### Interpreting the Results
