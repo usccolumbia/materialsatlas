@@ -11,16 +11,26 @@ Structural information of materials such as the crystal systems and space groups
 
 We propose and evaluate machine-learning algorithms for predicting the crystal systems and space groups of materials merely from their Inorganic Materials Compositions. Two widely used machine learning algorithms including MLP and RF and three multilabel learning algorithms including BinaryRelevance (BR), ClassifierChain (CC) and LabelPowerset are evaluated in this study. Two popular machinelearning algorithms including RFs and multilayered perceptron neural networks combined with three material representations are evaluated for four types of structure classification problems for both crystal system prediction and space group prediction: one-vs-all binary classification, multiclass classification, polymorphism prediction, and multilabel classification. More details can be found in Yong Zhao et al.[^1]
 
+<img src="img/Space_group_1.png" width=400>
+
+_Figure 1: Figure of Space group and Crystal Systems Predictor._
+
 ### Performance and Limitations
+
+The algorithms include MLP and three transformation algorithms (BinaryRelevance, ClassifierChain, and LabelPowerset) for multilabel classification, all using the RF as the
+base classifier. Tenfold cross-validation is applied for performance evaluation. Table 7 shows the best results for each evaluated algorithm.
+
+<img src="img/Space_group_table7.png">
 
 ### Using the Structure Predictor
 
 #### Entering Inputs
 
-Practically, the procedure for getting predictions consists in 2 steps
+Practically, the procedure for getting predictions consists in 3 steps
 
-1. Provide a csv file of formulas or provide 1 or more material formulas separated by comma or space (no processing if file uploaded)
+1. Provide a csv file of formulas or provide 1 or more material formulas separated by comma or space (no processing if file uploaded).
 2. Click "Check Now".
+3. Collect the results by cliking the "Download the Results" Link.
 
 #### Interpreting the Results
 
