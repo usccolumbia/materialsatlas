@@ -43,7 +43,7 @@ The results contains Composition and Elastic Moduli Predicted (Pa).
 
 ### Future features
 
-In the future, Currently, we want to generate more ECD data sets with more space groups to extend this method to more materials with diverse structures.
+In the future, we want to generate more ECD data sets with more space groups to extend this method to more materials with diverse structures.
 
 ### Citations
 
