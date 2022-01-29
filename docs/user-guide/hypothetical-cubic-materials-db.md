@@ -18,7 +18,7 @@ We use both crystal structure generator algorithms such as CubicGAN [^1] or phys
 
 In our CubicGAN model, we only consider three space groups 221,225,216 and only consider crystal structures of which the fractional coordinates are the multiples of 0.25. For the physics guided generator, we include 20 space groups without the fractional coordinate constraints. Our CubicGAN has recovered most of known cubic structures after training. The performance is here: 
 
-<img src="cubic.png" width=500>
+<img src="cubicgan.png" width=500>
 
 
 ### Using the cubic strucgture Search function
