@@ -23,8 +23,7 @@ Our structure based Elastic Moduli prediction model is based on our latest work 
 
 ### Performance and Limitations
 
-Table2: The results from fivefold cross validation on the whole data set with 2170 samples.
-<img src="img/Elastic_1.png" width=800>
+Sadman/ Yuqi
 
 ### Using the Elastic Moduli Predictor
 
