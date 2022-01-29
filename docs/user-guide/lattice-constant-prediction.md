@@ -15,7 +15,7 @@ More details can be found in Y.Li et al.[^1]
 
 ### Performance and Limitations
 
-<img src="img/LTC-performance.png" width=500>
+<img src="img/LTC-performance.png" width=900>
 
 ### Using the Lattice Constant Predictor
 
@@ -33,7 +33,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
-<img src='img/LTC.png' width=500>
+<img src='img/LTC.png' width=800>
 
 ### Future features
 
