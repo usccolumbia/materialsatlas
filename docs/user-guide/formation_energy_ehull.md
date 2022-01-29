@@ -11,6 +11,8 @@ It should also be mentioned that a higher accuracy for predicting formation ener
 
 Therefore, we provide both composition-based and structure-based options for predicting the formation energy using MaterialsAtals.org. You can submit either the cif file of the crystal structure or enter the chemical formula to perform the predictions.
 
+Formation energy indicates only whether the material is stable with respect to the parent materials of each element of it. However, after synthesizing the material, it can decompose to a combination of other competing phases. If the material is thermodynamically stable, the energy above the hull must be equal to zero. In MaterialsAtals.org, we provide a tool to compute energy above hull employing the DFT energies of the target material and competing phases.  
+
 
 ### Citations
 [^1] Mao, Y., Yang, H, Sheng, Y., Wang, J., Ouyang, R., Ye, C., Yang, J. and Zhang, W. Prediction and Classification of Formation Energies of Binary Compounds by Machine Learning: An Approach without Crystal Structure Information, ACS Omega, 2021 6 (22), 14533-14541, DOI: 10.1021/acsomega.1c01517 
