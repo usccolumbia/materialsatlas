@@ -6,31 +6,28 @@
 
 ### Background
 
-Elascticity is a materials property representing how heat is transferred from one side of a material to the other when thermal energy is applied. It is an important physical quantity in terms of many applications for better thermal management to ensure the performance, life-time, and safety for thermoelectric energy conversion devices, and spintronics technology. Thermal conductivity are controlled by both electron and lattice (phonon) contributions. Currently, first principles based DFT calculations can be used to compute the thermal conductivity for crystal materials, but it is slow or even not feasible for materials with large number of atoms within the unit cell. A variety of machine learning models have been developed with both composition and structural desriptors for thermal conductivity prediction as reviewed in [^1]. However, the key challenge of thermal conductivity prediction is the limited number labelled data samples. Quite a few studies have used from 80 to <200 labelled samples and demonstrated good (over-estimated) performance, which only interploate well within their highly redundant data set. Here we trained  composition based and structure based (using graph neural networks) thermal prediction models using a dataset with ~2700 samples [^2] with calculated thermal conductivity. A dataset with 872 experimentally determined LTC values are also available at [^6].
+Elascticity is a materials property representing how heat is transferred from one side of a material to the other when thermal energy is applied. We predict the elascticity of the materials based on our convolutional neural networks (CNNs) to learn physically meaningful features from the three-dimensional electronic charge density (ECD) of materials for elastic property prediction. We use electronic charge density (ECD) as a generic unified 3D descriptor for materials property prediction with the advantage of possessing close relation with the physical and chemical properties of materials. We developed an ECD-based 3D convolutional neural networks (CNNs) for predicting the elastic properties of materials, in which CNNs can learn effective hierarchical features with multiple convolving and pooling operations. This app can predict the elastic properties such as bulk/shear modulus and Poisson's ratio for a given crystal materials formula or structure. More details can be found in Yong Zhao et al.[^1].
 
 
-### The LTC Prediction methods
-
-
-
-#### The composition based LTC prediction model
-
-Our composition model is trained using the Magpie descriptors from the Matminer package [^3] together with the Roost neural network model [^4]. 
-
-#### The deep graph neural network model for LTC prediction
-
-Our structure based LTC prediction model is based on our latest work of DeeperGATGNN algorithm [^5], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
+### The Elastic Moduli Prediction method
+We propose to use electronic charge density (ECD) as a generic unified 3D descriptor for materials property prediction with the advantage of possessing close relation with the physical and chemical properties of materials and developed an ECD-based 3D convolutional neural networks (CNNs) for predicting the elastic properties of materials, in which CNNs can learn effective hierarchical features with multiple convolving and pooling operations. Since physical and chemical properties of materials are related to the transferability between atoms (nuclei) and the presence of electronic charges or electronic multipoles on atoms or molecules, extraction of informative features from materials ECD can help predict materials properties. 
 
 ### Performance and Limitations
 
 The MAE of our composition ML model on the hold-out test set is xxxxx. 
 The MAE of our structure ML model on the hold-out test set is xxxxx. 
 
-### Using the LTC Predictor
+### Using the Elastic Moduli Predictor
 
 #### Entering Inputs
 
 Practically, the procedure for getting predictions consists in 3 steps
+
+1. Provide a csv file of formulas or provide 1 or more material formulas separated by comma or space (no processing if file uploaded).
+2. Click "Check Now".
+3. Collect the results by cliking the "Download the Results" Link.
+
+
 
 1. Input a material formula or a csv with a list of formulas. It will automatically use the composition machine learning model. You can also upload a structure cif file, it will select the graph neural network model accordingly. 
 
@@ -53,11 +50,11 @@ In the future, we want to further improve the performance of our model using tra
 
 To cite the LTC Predictor App, please reference the following works:
 
-- Goodall, Rhys EA, and Alpha A. Lee. "Predicting materials properties without crystal structure: Deep representation learning from stoichiometry." Nature communications 11, no. 1 (2020): 1-9.
+- Zhao, Y.; Yuan, K.; Liu, Y.; Louis, S. Y.; Hu, M.; Hu, J. Predicting Elastic Properties of Materials from Electronic Charge Density Using 3D Deep Convolutional Neural Networks. J. Phys. Chem. C 2020, 124 (31), 17262– 17273,  DOI: 10.1021/acs.jpcc.0c02348
 - Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
 
-[^1]: Ouyang, Y., Yu, C., Yan, G. & Chen, J. Machine learning approach for the prediction and optimization of thermal transport properties. Front. Phys. 16, 43200 (2021).
+[^1]: Zhao, Y.; Yuan, K.; Liu, Y.; Louis, S. Y.; Hu, M.; Hu, J. Predicting Elastic Properties of Materials from Electronic Charge Density Using 3D Deep Convolutional Neural Networks. J. Phys. Chem. C 2020, 124 (31), 17262– 17273,  DOI: 10.1021/acs.jpcc.0c02348
 [^2]: https://tedesignlab.org/database/
 [^3]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
 [^4]: https://github.com/CompRhys/roost
