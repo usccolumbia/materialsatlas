@@ -23,7 +23,7 @@ There are many more effective descriptors emerging all the time which are develo
 
 #### Entering Inputs
 
-Practically, the procedure for getting predictions consists in 3 steps
+Practically, the procedure for getting predictions consists in 5 steps
 
 1. First select feature category: compositional, structural, or mixed features
 2. Select target feature type
@@ -35,7 +35,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 The csv file contains all the calculated features along with the compositions.
 
-<img src="img/feature.png" width="500">
+<img src="img/feature.png" width="700">
 
 
 ### Future features
