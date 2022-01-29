@@ -12,14 +12,14 @@ Elascticity is a materials property representing how heat is transferred from on
 
 We developed two prediction models for elastic prediction using the known materials with elastic information in the MaterialsProject database. 
 
-#### The composition based Bandgap prediction model
+#### The composition based Elastic Moduli prediction model
 
 Our composition model is trained using the Magpie descriptors from the Matminer package [^4] together with the Roost neural network model [^5]. 
 For this model, only the formula or composition is needed. 
 
-#### The deep graph neural network model for Bandgap prediction
+#### The deep graph neural network model for Elastic Moduli prediction
 
-Our structure based bandgap prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
+Our structure based Elastic Moduli prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
 
 ### Performance and Limitations
 
@@ -54,12 +54,11 @@ To cite the LTC Predictor App, please reference the following works:
 
 
 [^1]: Zhao, Y.; Yuan, K.; Liu, Y.; Louis, S. Y.; Hu, M.; Hu, J. Predicting Elastic Properties of Materials from Electronic Charge Density Using 3D Deep Convolutional Neural Networks. J. Phys. Chem. C 2020, 124 (31), 17262– 17273,  DOI: 10.1021/acs.jpcc.0c02348
-[^2]: https://tedesignlab.org/database/
-[^3]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
-[^4]: https://github.com/CompRhys/roost
-[^5]:Omee, Sadman Sadeed, Steph-Yves Louis, Nihang Fu, Lai Wei, Sourin Dey, Rongzhi Dong, Qinyang Li, and Jianjun Hu. "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
-[^6]:https://figshare.com/articles/dataset/Citrine_Thermal_Conductivity_Data/7231202
-
+[^2]: Roberts, G.G., Apsley, N., & Munn, R.W. Temperature dependent electronic conduction in semiconductors. Physics Reports, 60(2), 61-150 (1980).
+[^3]: Michael Shur, Wide band gap semiconductor technology: State-of-the-art, Solid-State Electronics, 155,65-75, https://doi.org/10.1016/j.sse.2019.03.020 (2019).
+[^4]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
+[^5]: https://github.com/CompRhys/roost
+[^6]:Omee, Sadeed, S., Louis, S.,  Fu, N., Wei,L., Dey,S., Dong, R.,  Li, Q., and  Hu. J., "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
 ### Authors
 
 - Jianjun Hu
