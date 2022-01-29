@@ -6,7 +6,8 @@
 
 ### Background
 
-Elasticity quantifies a material's resistance to non-permanent, or elastic, deformation. When under stress, materials will first exhibit elastic properties: the stress causes them to deform, but the material will return to its previous state after the stress is removed. After passing through the elastic region and through their yield point, materials enter a plastic region, where they exhibit permanent deformation even after the tensile stress is removed. We predict the elascticity of the materials based on our convolutional neural networks (CNNs) to learn physically meaningful features from the three-dimensional electronic charge density (ECD) of materials for elastic property prediction. We use electronic charge density (ECD) as a generic unified 3D descriptor for materials property prediction with the advantage of possessing close relation with the physical and chemical properties of materials. We developed an ECD-based 3D convolutional neural networks (CNNs) for predicting the elastic properties of materials, in which CNNs can learn effective hierarchical features with multiple convolving and pooling operations. This app can predict the elastic properties such as bulk/shear modulus and Poisson's ratio for a given crystal materials formula or structure. Our related work can be found in Yong Zhao et al.[^1].
+Elasticity quantifies a material's resistance to non-permanent, or elastic, deformation. When under stress, materials will first exhibit elastic properties: the stress causes them to deform, but the material will return to its previous state after the stress is removed. After passing through the elastic region and through their yield point, materials enter a plastic region, where they exhibit permanent deformation even after the tensile stress is removed. Fast computational prediction of elastic property can be used to do large-scale screening of new elastic materials. Especially, since bulk modulus and shear modulus, two elastic property measurements can be used to calculate a material's hardness, elasticity prediction models have been widely used to find superhard materials 
+[^2] [^7].
 
 ### The Elastic Moduli Prediction method
 
@@ -53,11 +54,12 @@ To cite the LTC Predictor App, please reference the following works:
 
 
 [^1]: Zhao, Y.; Yuan, K.; Liu, Y.; Louis, S. Y.; Hu, M.; Hu, J. Predicting Elastic Properties of Materials from Electronic Charge Density Using 3D Deep Convolutional Neural Networks. J. Phys. Chem. C 2020, 124 (31), 17262– 17273,  DOI: 10.1021/acs.jpcc.0c02348
-[^2]: Roberts, G.G., Apsley, N., & Munn, R.W. Temperature dependent electronic conduction in semiconductors. Physics Reports, 60(2), 61-150 (1980).
-[^3]: Michael Shur, Wide band gap semiconductor technology: State-of-the-art, Solid-State Electronics, 155,65-75, https://doi.org/10.1016/j.sse.2019.03.020 (2019).
+[^2]: Kvashnin, Alexander G., Zahed Allahyari, and Artem R. Oganov. "Computational discovery of hard and superhard materials." Journal of Applied Physics 126, no. 4 (2019): 040901.
 [^4]: https://hackingmaterials.lbl.gov/matminer/matminer.featurizers.composition.html?highlight=magpie
 [^5]: https://github.com/CompRhys/roost
 [^6]:Omee, Sadeed, S., Louis, S.,  Fu, N., Wei,L., Dey,S., Dong, R.,  Li, Q., and  Hu. J., "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
+[^7]: Chen, Wei-Chih, Joanna N. Schmidt, Da Yan, Yogesh K. Vohra, and Cheng-Chien Chen. "Machine learning and evolutionary prediction of superhard BCN compounds." npj Computational Materials 7, no. 1 (2021): 1-8.
+
 ### Authors
 
 - Jianjun Hu
