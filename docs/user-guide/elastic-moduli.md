@@ -11,7 +11,16 @@ Elascticity is a materials property representing how heat is transferred from on
 
 ### The Elastic Moduli Prediction method
 
-We propose to use electronic charge density (ECD) as a generic unified 3D descriptor for materials property prediction with the advantage of possessing close relation with the physical and chemical properties of materials and developed an ECD-based 3D convolutional neural networks (CNNs) for predicting the elastic properties of materials, in which CNNs can learn effective hierarchical features with multiple convolving and pooling operations. Since physical and chemical properties of materials are related to the transferability between atoms (nuclei) and the presence of electronic charges or electronic multipoles on atoms or molecules, extraction of informative features from materials ECD can help predict materials properties. 
+We developed two prediction models for elastic prediction using the known materials with elastic information in the MaterialsProject database. 
+
+#### The composition based Bandgap prediction model
+
+Our composition model is trained using the Magpie descriptors from the Matminer package [^4] together with the Roost neural network model [^5]. 
+For this model, only the formula or composition is needed. 
+
+#### The deep graph neural network model for Bandgap prediction
+
+Our structure based bandgap prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
 
 ### Performance and Limitations
 
