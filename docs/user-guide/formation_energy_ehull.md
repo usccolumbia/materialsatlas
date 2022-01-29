@@ -46,7 +46,7 @@ K., Snyder, G. J., Foster, I., Jain, A., Matminer: An open source toolkit for ma
 
 [^7]: Ong, S. P.; Wang, L.; Kang, B.; Ceder, G. Li−Fe−P−O2 Phase Diagram from First Principles Calculations, Chem. Mater., 2008, 20, 1798–1807, doi:10.1021/cm702327g.
 
-[^8]: Ong, S. P.; Jain, A.; Hautier, G.; Kang, B.; Ceder, G. Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first\ principles calculations, Electrochem. commun., 2010, 12, 427–430, doi:10.1016/j.elecom.2010.01.010.
+[^8]: Ong, S. P.; Jain, A.; Hautier, G.; Kang, B.; Ceder, G. Thermal stabilities of delithiated olivine MPO4 (M=Fe, Mn) cathodes investigated using first principles calculations, Electrochem. commun., 2010, 12, 427–430, doi:10.1016/j.elecom.2010.01.010.
 
 [^9]: https://pymatgen.org/pymatgen.analysis.phase_diagram.html
 
