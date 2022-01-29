@@ -33,7 +33,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 #### Interpreting the Results
 
-<img src="img/2d_result.png" width=600>
+<img src="img/2d_result.png" width=400>
 
 ### Future features
 
