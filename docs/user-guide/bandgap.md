@@ -1,5 +1,5 @@
 
-# Band Gap Predictor
+# Bandgap Predictor
 
 #### by Dr. Hu
 
@@ -7,7 +7,9 @@
 
 ### Background
 
-Band gap is a materials property representing how heat is transferred from one side of a material to the other when thermal energy is applied. It is an important physical quantity in terms of many applications for better thermal management to ensure the performance, life-time, and safety for thermoelectric energy conversion devices, and spintronics technology. Thermal conductivity are controlled by both electron and lattice (phonon) contributions. Currently, first principles based DFT calculations can be used to compute the thermal conductivity for crystal materials, but it is slow or even not feasible for materials with large number of atoms within the unit cell. A variety of machine learning models have been developed with both composition and structural desriptors for thermal conductivity prediction as reviewed in [^1]. However, the key challenge of thermal conductivity prediction is the limited number labelled data samples. Quite a few studies have used from 80 to <200 labelled samples and demonstrated good (over-estimated) performance, which only interploate well within their highly redundant data set. Here we trained  composition based and structure based (using graph neural networks) thermal prediction models using a dataset with ~2700 samples [^2] with calculated thermal conductivity. A dataset with 872 experimentally determined LTC values are also available at [^6].
+The bandgap is the energy difference between the valence band maximum (VBM) and the conduction band minimum (CBM) in the electronic band structure of a material. The bandgaps of the semiconductors are greater than the bandgap of metals (0 eV) and smaller than that of insulators (usually greater than 5 eV). The bandgap acts as an forbidned gap for electrons, which can not shift from VBM to CBM without enough external energy. The electrons in valence region are not contributing for electric current while the electrons in conduction bands are free to move.   Therefore, by modulating the external thermal energy, we can tune the electron flow of a semiconductor. 
+
+
 
 
 ### The LTC Prediction methods
