@@ -5,31 +5,13 @@
 
 ### Background
 
-Crystal structure and compound prediction is an essential step of computational materials
-design.
-Indeed, while many materials properties can be computed nowadays with _ab-initio_
-computations.
-Those computed properties are only relevant if they are evaluated on a compound (i.e., a
-stoichiometry and crystal structure) stable enough to be formed.
-Crystal structure prediction can be quite useful
-for experimentalists too.
-For instance, when only powder XRD experiments are available after synthesis of a new compound, a theoretical suggestion of a likely structure can tremendously help the structure refinement and determination for example.
-
-The most common approach in the field of crystal structure prediction is to treat it as an optimization problem. [^1]
-Researchers use optimization algorithms to search for the minimum of the relevant thermodynamic potential (e.g., the energy at 0 K, 0 atm) by varying the crystal's degrees of freedom (lattice constants, atomic positions).
-This optimization is extremely challenging as the energy landscape is very rugged and full of local minima.
-Very computationally expensive advanced optimization techniques (e.g., simulated annealing and genetic algorithm) are usually necessary to tackle this optimization problem.
-
-In a departure to this traditional approach, the methods we have developed use a combination of data mining and _ab-initio_ computations in the density functional theory (DFT) framework to tackle this problem with a limited computational budget.
-The basic idea is to learn the chemical rules governing phase stability from a database of experimentally known compounds.
-Embedding those rules in a mathematical model, we can predict what are the most likely compounds to form in a given chemical system.
-Finally, the last step consists of testing those candidates for stability using _ab-initio_ computations ([see Phase Diagram](phase-diagram.md)).
+Structural information of materials such as the crystal systems and space groups are highly useful for analyzing their physical properties. However, the enormous composition space of materials makes experimental X-ray diffraction (XRD) or first-principle-based structure determination methods infeasible for large-scale material screening in the composition space. Here is a machine learning-based method for predicting space groups and crystal systems of inorganic materials, given only their compositional information. Such models allow us to conduct fast screening of millions of potential chemicals as done in ref (1). We evaluate three types of features/descriptors: Magpie, [^2] atom vector, [^3] and one hot encoding (atom frequency) as the inputs of our machine-learning algorithms. Neither XRD data nor DFT calculation is involved in feature calculations. Because of the fact that one composition may correspond to multiple crystal structures, four classifiers are developed to predict material structures in terms of the crystal system and space group: one-versus-all classifiers, multiclass classifiers, polymorphism classifiers, and multilabel classifiers. We leverage multi layer perceptron (MLP) and RF to analyze how those feature sets can help determine the crystal structure using 10 fold cross-validation. More details can be found in Yong Zhao et al.[^1]
 
 ### The Ionic Substitution based Structure Prediction Method
 
 The compound prediction model available on the Materials Project now, through the structure predictor app, is based on our recent work on the data mining of ionic substitutions.
 In this section we will briefly explain the idea of the approach and how to use the explorer.
-More details can be found in Hautier et al.[^2]
+More details can be found in Hautier et al.
 
 ### The basic idea
 
@@ -143,15 +125,18 @@ The two models are complimentary: the model based on correlations between struct
 
 To cite the Structure Predictor App, please reference the following works:
 
-- G. Hautier, V. Ehrlacher, C.C. Fischer, A. Jain, G. Ceder, Data Mined Ionic Substitutions for the Discovery of New Compounds, Inorganic Chemistry, vol. 50, 2011, pp. 656-663.
-- A. Jain, G. Hautier, C. J. Moore, S. P. Ong, C. C. Fischer, T. Mueller, K. A. Persson, and G. Ceder, A high-throughput infrastructure for density functional theory calculations, Computational Materials Science, vol. 50, 2011, pp. 2295-2310.
+- Zhao, Yong, et al. "Machine learning-based prediction of crystal systems and space groups from inorganic materials compositions." ACS omega 5.7 (2020): 3596-3606.
+- Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
-[^1]: 10.1038/nmat2321
-[^2]: 10.1021/ic102031h
-[^3]: 10.1021/cm100795d
-[^4]: 10.1038/nmat1691
 
 ### Authors
+- Jianjun Hu
+- Lai Wei
 
-- Geoffroy Hautier
-- Anubhav Jain
+
+### References
+[^1]: Zhao, Yong, et al. "Machine learning-based prediction of crystal systems and space groups from inorganic materials compositions." ACS omega 5.7 (2020): 3596-3606.
+
+[^2]: Ward, L.; Agrawal, A.; Choudhary, A.; Wolverton, C. A general purpose machine learning framework for predicting properties of inorganic materials. npj Comput. Mater. 2016, 2, 16028.
+
+[^3]: Zhou, Q.; Tang, P.; Liu, S.; Pan, J.; Yan, Q.; Zhang, S.-C. Learning atoms for materials discovery. Proc. Natl. Acad. Sci. U.S.A. 2018, 115, E6411−E6417.
