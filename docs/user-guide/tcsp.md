@@ -72,7 +72,7 @@ Our TCSP algorithm has been evaluated on the ~130,000 structures in the Material
 
 Practically, the procedure for getting predictions consists in 4 steps
 
-1. Input the query formula， 
+1. Input the query formula
 2. Select the space group of target structure. Input 0 if do not want to specify
 3. Input your email to receive download link of predicted results
 4. Click "Predict Now" button
