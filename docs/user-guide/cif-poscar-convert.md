@@ -7,19 +7,16 @@
 
 This is a simple utility to convert the crystal structure file formats between cif and poscar, which is used in DFT simulation.
 
-
-
-
 ### Using the Converter
 
 #### Steps
 
 Practically, the procedure consists in 4 steps
 
-1. Choose conversion direction:   cif2Poscar or Poscar to Cif
-2. Upload a cif or Poscar file
-3. Click convert Now button
-4. Download the result file.
+1. Choose conversion direction: Cif to Poscar or Poscar to Cif
+2. Upload a Cif or Poscar file and input email for notification when conversion is done
+3. Click "Convert Now" button
+4. Download the result file
 
 
 ### Citations
