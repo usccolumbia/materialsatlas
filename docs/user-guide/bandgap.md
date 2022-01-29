@@ -1,7 +1,6 @@
 
 # Band Gap Predictor
 
-#### by Dr. Hu
 
 ## Manual
 
