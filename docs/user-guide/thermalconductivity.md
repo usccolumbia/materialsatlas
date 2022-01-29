@@ -23,7 +23,7 @@ Our structure based LTC prediction model is based on our latest work of DeeperGA
 
 ### Performance and Limitations
 
-The MAE of our composition ML model on the hold-out test set is xxxxx. 
+The MAE of our composition ML model on the hold-out test set is 5.09. 
 The MAE of our structure ML model on the hold-out test set is xxxxx. 
 
 ### Using the LTC Predictor
