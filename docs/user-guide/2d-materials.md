@@ -35,7 +35,8 @@ Practically, the procedure for getting predictions consists in 4 steps
 
 #### Interpreting the Results
 The result contains formula, label and probability
-<img src="img/2d_result.png" width=400>
+
+<img src="img/2d_result.png" width=300>
 
 ### Future features
 
