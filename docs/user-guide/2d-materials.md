@@ -1,6 +1,6 @@
 
 # 2D materials Predictor
-#### By Wei Lai
+#### By Lai Wei
 
 ## Manual
 
@@ -57,5 +57,5 @@ To cite the Structure Predictor App, please reference the following works:
 
 ### Authors
 
-- Wei Lai
+- Lai Wei
 - Jianjun Hu
