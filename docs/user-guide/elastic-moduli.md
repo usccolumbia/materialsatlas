@@ -10,12 +10,12 @@ Elascticity is a materials property representing how heat is transferred from on
 
 ### The Elastic Moduli Prediction method
 
-We developed two prediction models for elastic prediction using the known materials with elastic information in the MaterialsProject database. 
+We developed two prediction models for elasticity prediction using the known materials with elastic information in the MaterialsProject database. 
 
 #### The composition based Elastic Moduli prediction model
 
 Our composition model is trained using the Magpie descriptors from the Matminer package [^4] together with the Roost neural network model [^5]. 
-For this model, only the formula or composition is needed. 
+For this model, only the formula is needed. 
 
 #### The deep graph neural network model for Elastic Moduli prediction
 
