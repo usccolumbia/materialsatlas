@@ -24,6 +24,11 @@ Our structure based Elastic Moduli prediction model is based on our latest work 
 
 ### Performance and Limitations
 The MAE of our composition ML model on the hold-out test set is - <br>
+Bulk Mod - 15.7
+Shear Mod - 18.0
+Young's Mod - 76.8
+Poisson Ratio - 8.7
+
 The MAE of our structure ML model on the hold-out test set is - <br>
 Bulk Mod - 13.4268 <br>
 Shear Mod - 15.2374 <br>
@@ -69,3 +74,4 @@ To cite the LTC Predictor App, please reference the following works:
 - Jianjun Hu
 - Lai Wei
 - Sadman Sadeed Omee
+- Yuqi Song
