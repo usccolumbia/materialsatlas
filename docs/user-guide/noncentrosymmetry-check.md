@@ -47,6 +47,7 @@ Practically, the procedure for getting predictions consists in 4 steps
 4. Download detailed results by clicking link
 
 #### Interpreting the Results
+The result contains formula, label and probability
 
 <img src="img/noncentrosymmetric_output.png" width=400>
 
