@@ -74,3 +74,4 @@ To cite the bandgap Predictor App, please reference the following works:
 
 - Jianjun Hu
 - Dilanga Siriwande
+- Sadman Sadeed Omee
