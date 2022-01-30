@@ -68,3 +68,4 @@ To cite the LTC Predictor App, please reference the following works:
 
 - Jianjun Hu
 - Lai Wei
+- Sadman Sadeed Omee
