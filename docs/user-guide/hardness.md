@@ -30,7 +30,7 @@ Our structure based hardness prediction model is based on our latest work of Dee
 ### Performance and Limitations
 
 The MAE of our composition ML model on the hold-out test set is xxxxx. <br>
-The MAE of our structure ML model on the hold-out test set is xxxxx. 
+The MAE of our structure ML model on the hold-out test set is 2.42. 
 
 ### Using the Hardness Predictor
 
