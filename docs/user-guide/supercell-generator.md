@@ -21,9 +21,9 @@ The generator is implemented using the pacakge Supercell Program [^1]. The progr
 
 Practically, the procedure for getting predictions consists in 3 steps
 
-1. upload a cif structure file
+1. Upload a cif structure file
 
-2. set the supercell dimensions in the format of 2,2,2, indicating X,Y,Z directions repeats of unit cells.
+2. Set the supercell dimensions in the format of 2,2,2, indicating X,Y,Z directions repeats of unit cells.
 
 3. Download the cif file.
 
