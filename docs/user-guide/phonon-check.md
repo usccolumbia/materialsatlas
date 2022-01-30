@@ -4,7 +4,7 @@
 ## Manual
 
 ### Background
-Phonons are massless quantum mechanical particles that are formed due to atomic vibrations within the crystal lattice. The importance of studying phonons is a significant number of physical properties, such as Raman scattering spectra, thermal expansion, and heat conduction can be explained using phonons [^1]. The phonon dispersion is the relationship between the k-space and the frequencies of normal modes for all the optical and acoustic branches in a selected direction in the crystal. The number of braches is equal to the number of degrees of freedom of the unit cell [^2].  
+Phonons are massless quantum mechanical particles that are formed due to atomic vibrations within the crystal lattice. The importance of studying phonons is a significant number of physical properties, such as Raman scattering spectra, thermal expansion, and heat conduction can be explained using phonons [^1]. The phonon dispersion is the relationship between the k-space and the frequencies of normal modes for all the optical and acoustic branches of lattice vibrations in a selected direction in the crystal. The number of braches is equal to the number of degrees of freedom of the unit cell [^2].  
 
 ### Citations
 
