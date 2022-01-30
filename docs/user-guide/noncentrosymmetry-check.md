@@ -33,7 +33,8 @@ material’ Magpie composition features [^3]. Our training set is composed of 82
 
 ### Performance and Limitations
 
-
+<img src="img/noncentrosymmetric_result.png" width=400>
+ 
 ### Using the noncentrosymmetric material Predictor
 
 #### Entering Inputs
@@ -47,12 +48,11 @@ Practically, the procedure for getting predictions consists in 4 steps
 
 #### Interpreting the Results
 The result contains formula, label and probability
-
-<img src="img/2d_result.png" width=300>
+<img src="img/noncentrosymmetric_output.png" width=900>
 
 ### Future features
 
-In the future, we want to We want to improve performance with more advanced algorithm based on graph neural network.
+In the future, we want to improve performance with more advanced algorithm based on graph neural network.
 
 ### Citations
 
