@@ -20,14 +20,14 @@ For this model, only the formula is needed.
 
 #### The deep graph neural network model for Elastic Moduli prediction
 
-Our structure based Elastic Moduli prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
+Our structure based Elastic Moduli prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a global attention based scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction. 
 
 ### Performance and Limitations
 The MAE of our composition ML model on the hold-out test set is - <br>
 The MAE of our structure ML model on the hold-out test set is - <br>
-Bulk Modulus - 13.4268 <br>
-Shear Modulus - 15.2374 <br>
-Young's Modulus - 55.335 <br>
+Bulk Mod - 13.4268 <br>
+Shear Mod - 15.2374 <br>
+Young's Mod - 55.335 <br>
 Poisson Ratio - 0.0962
 
 ### Using the Elastic Moduli Predictor
