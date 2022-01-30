@@ -21,7 +21,7 @@ For each query composition, the current algorithm needs to calcualte pairwise di
 
 #### Entering Inputs
 
-Practically, the procedure consists in 3 steps
+Practically, the procedure consists in 4 steps
 
 1. input formula
 2. select database

@@ -26,7 +26,7 @@ Our structure based bandgap prediction model is based on our latest work of Deep
 
 ### Performance and Limitations
 
-The MAE of our composition ML model on the hold-out test set is xxxxx. <br>
+The MAE of our composition ML model on the hold-out test set is 0.465. <br>
 The MAE of our structure ML model on the hold-out test set is 0.2457. 
 
 ### Using the Bandgap Predictor
