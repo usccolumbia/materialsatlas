@@ -2,7 +2,6 @@
 # Materials Hardness Predictor
 
 
-#### by Dr. Hu
 
 ## Manual
 
