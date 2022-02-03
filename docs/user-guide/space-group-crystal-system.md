@@ -16,11 +16,11 @@ In this app, we used the CRYSPnet algorithm [^5] for space group and crystal sys
 
 Table2: Crystal system prediction performance
 
-<img src="img/Space_group_table2.png" width=800>
+<img src="../img/Space_group_table2.png" width=800>
 
 Table3: Space group prediction performance
 
-<img src="img/Space_group_table3.png" width=800>
+<img src="../img/Space_group_table3.png" width=800>
 
 ### Using the Predictor
 
