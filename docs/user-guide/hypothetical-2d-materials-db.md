@@ -19,7 +19,7 @@ We employ the random forest (RF) as the surrogate model for predicting the 2D pr
 
 ### Performance and Limitations
 
-<img src="img/2D_Performance.png" width="600">
+<img src="../img/2D_Performance.png" width="600">
 _Figure 1: Performance of our RF random forest classifier. (a) ROC curve and AUC score; (b) false-positive rates with different thresholds._
 
 <!-- ![How MATGAN works](img/2D_Performance.png) -->
