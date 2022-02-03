@@ -46,7 +46,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 #### Interpreting the Results
 
 
-<img src="img/bandgap.png" width=500>
+<img src="../img/bandgap.png" width=500>
 
 
 ### Future features
