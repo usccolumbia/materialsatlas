@@ -13,7 +13,7 @@ The generator is based on the GAN neural network model as described in our npj p
 
 ### The basic idea
 
-<img src="img/matgan.png" width="400">
+<img src="../img/matgan.png" width="400">
 _Figure 1: Generative models of materials compositions._
 
 <!-- ![How MATGAN works](img/matgan.png) -->
@@ -26,15 +26,15 @@ Our generative adversal network (GAN) model for inorganic materials composition 
 
 ### Performance and Limitations
 
-<img src="img/matgan_performance1.png" width="600">
+<img src="../img/matgan_performance1.png" width="600">
 
-<img src="img/matgan_performance2.png" width="600">
+<img src="../img/matgan_performance2.png" width="600">
 
 
-<!-- ![How MATGAN works](img/matgan_performance1.png)
+<!-- ![How MATGAN works](../img/matgan_performance1.png)
 _Figure 2: Generative models of materials compositions._
 
-![How MATGAN works](img/matgan_performance2.png)
+![How MATGAN works](../img/matgan_performance2.png)
 _Figure 3: Generative models of materials compositions._ -->
 
 ### Searching the hypothetical materials database
