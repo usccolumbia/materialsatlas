@@ -13,15 +13,6 @@ The vibrational spectra of materials play an important role in physical
 phenomena such as thermal conductivity, superconductivity,
 ferroelectricity and carrier thermalization.
 
-There are different methods to calculate the vibrational spectra from
-first-principles using the density functional theory formalism (DFT).
-It can be obtained from the Fourier transform of the trajectories of the
-atoms on a molecular dynamics run, from finite-differences of the total
-energy with respect to atomic displacements or directly from density
-functional perturbation theory (DFPT).
-The latter method is the one used
-in the calculations on the Materials project page.
-
 
 
 ## Citation
