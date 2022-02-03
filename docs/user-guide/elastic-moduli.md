@@ -11,7 +11,17 @@ Elasticity quantifies a material's resistance to non-permanent, or elastic, defo
 
 ### The Elastic Moduli Prediction method
 
-We developed two prediction models for elasticity prediction using the known materials with elastic information in the MaterialsProject database. 
+We developed two prediction models for elasticity prediction using the known materials with elastic information in the MaterialsProject database. The number of training samples for predicting each of the properties of this module is given below: <br>
+Bulk Mod - 13176 <br>
+Shear Mod - 13176 <br>
+Young's Mod - 12854 <br>
+Poisson Ratio - 12858 
+
+The element range for these training datasets are given below: <br>
+Bulk Mod - 89 <br>
+Shear Mod - 89 <br>
+Young's Mod - 85 <br>
+Poisson Ratio - 85 
 
 #### The composition based Elastic Moduli prediction model
 
@@ -24,10 +34,10 @@ Our structure based Elastic Moduli prediction model is based on our latest work 
 
 ### Performance and Limitations
 The MAE of our composition ML model on the hold-out test set is - <br>
-Bulk Mod - 15.7
-Shear Mod - 18.0
-Young's Mod - 76.8
-Poisson Ratio - 8.7
+Bulk Mod - 15.7 <br>
+Shear Mod - 18.0 <br>
+Young's Mod - 76.8 <br>
+Poisson Ratio - 8.7 
 
 The MAE of our structure ML model on the hold-out test set is - <br>
 Bulk Mod - 13.4268 <br>
