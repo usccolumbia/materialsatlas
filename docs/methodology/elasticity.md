@@ -18,15 +18,9 @@ its reliability and accuracy.
 
 ## Derived elastic properties
 
-From the elastic tensor defined above, a number of aggregate and derived
-properties is calculated. These properties are all available on the
-Materials Project webpage and are shown in the Table 1. As described
-above, the elastic tensor is presented in POSCAR-format. From the
-elastic tensor in POSCAR-format, the compliance tensor is calculated and
-reported. Also reported are Voigt, Reuss and Voigt-Reuss-Hill [^2]
-bounds on the bulk and shear moduli for polycrystalline materials.
-Finally, the elastic anisotropy index [^3] and isotropic Poisson ratio
-are reported.
+ elastic tensor, Voigt, Reuss and Voigt-Reuss-Hill [^2]
+bounds on the bulk and shear moduli for polycrystalline materials, the elastic anisotropy index and isotropic Poisson ratio
+.
 
 | Property                              | Unit       | Description                                                                                                          | Equation                                                                                                                  |
 | ------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
