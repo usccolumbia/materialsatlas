@@ -22,7 +22,7 @@ forest model training.
 
 ### Performance and Limitations
 
-<img src="img/2d_results.png" width=600>
+<img src="../img/2d_results.png" width=600>
 
 ### Using the 2D material Predictor
 
@@ -38,7 +38,7 @@ Practically, the procedure for getting predictions consists in 4 steps
 #### Interpreting the Results
 The result contains formula, label and probability
 
-<img src="img/2d_result.png" width=300>
+<img src="../img/2d_result.png" width=300>
 
 ### Future features
 
