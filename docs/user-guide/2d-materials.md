@@ -22,7 +22,7 @@ forest model training.
 
 ### Performance and Limitations
 
-<img src="../img/2d_results.png" width=600>
+<img src="../img/2d_results.png">
 
 ### Using the 2D material Predictor
 
