@@ -7,7 +7,7 @@
 ### Background
 
 Elasticity quantifies a material's resistance to non-permanent, or elastic, deformation. When under stress, materials will first exhibit elastic properties: the stress causes them to deform, but the material will return to its previous state after the stress is removed. After passing through the elastic region and through their yield point, materials enter a plastic region, where they exhibit permanent deformation even after the tensile stress is removed. Fast computational prediction of elastic property can be used to do large-scale screening of new elastic materials. Especially, since bulk modulus and shear modulus, two elastic property measurements can be used to calculate a material's hardness, elasticity prediction models have been widely used to find superhard materials 
-[^2] [^7]. We have also used the 3d electronic cloud to predict elastic modulie in [^8].
+[^2] [^7]. We have also used the 3d electronic cloud to predict elastic modulie in [^1].
 
 ### The Elastic Moduli Prediction method
 
