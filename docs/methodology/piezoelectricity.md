@@ -1,6 +1,8 @@
 # Piezoelectricity Property
 
-## Introduction
+#### adapted from MaterialsProject.org for convenience of users.
+
+## Introduction[^1]
 
 Piezoelectricity is a reversible physical process that occurs in some
 materials whereby an electric moment is generated upon the application
@@ -43,8 +45,7 @@ please reference the following work:
 ## References
 
 [^1]:
-    Baroni, Giannozzi S. P. and Testa, A. Phys. Rev. Lett. 58, 1861
-    (1987)
+   https://docs.materialsproject.org/methodology/piezoelectricity/
 
 [^2]:
     Nye, J. F. Physical properties of crystals (Clarendon press,
