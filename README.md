@@ -1,4 +1,3 @@
-# materialsatlas
 
 # MaterialsAtlas Documentation
 
@@ -11,7 +10,7 @@ This is a place for all documentation relating to the
 - Tutorial: Using our web apps, application programming interface (API), and open source code.
 - Contribution: Developer guides and design specifications
 
-If you notice an error or omission, please post an [issue](https://github.com/materialsproject/docs/issues/new) or suggest an
+If you notice an error or omission, please post an [issue](https://github.com/usccolumbia/materialsatlas/docs/issues/new) or suggest an
 edit to us via a Pull Request.
 
 Thanks,
