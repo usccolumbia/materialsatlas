@@ -48,3 +48,8 @@ Open [http://127.0.0.1:8000/](http://127.0.0.1:8000/) to preview the site and se
 
 Create a new git branch to record any changes. When you push your branch to GitHub, you can then initiate a Pull
 Request against the `master` branch of this repo.
+
+
+### Declaration
+
+Some of the documentation sentences and structures are adapted from Materials Project documentation https://docs.materialsproject.org/. They are our role model -:)
