@@ -2,7 +2,7 @@
 # MaterialsAtlas Documentation
 
 This is a place for all documentation relating to the
-[MaterialsAtlas](http://materialsatlas.org) (MAtalas):
+[MaterialsAtlas](http://materialsatlas.org) (MAtalas). The online docs are accessible [here](http://docs.materialsatlas.org)
 
 - Foundations: concepts in materials and data science for materials discovery
 - Algorithms: key materials informatics algorithms
