@@ -19,7 +19,7 @@ More details can be found in L.Wei et al. [^1]
 
 ### The basic idea
 
-<img src="img/TCSP_flowchart.png" width=400>
+<img src="../img/TCSP_flowchart.png" width=400>
 <!-- ![TCSP_flowchart](img/TCSP_flowchart.png) -->
 
 _Figure 1: Flowchart of TCSP algorithm._
