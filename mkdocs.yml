@@ -10,17 +10,11 @@ nav:
   - Home: "index.md"
   #- Foundation: "foundation.md"
   - Methodology:
-      - "Total energies": "methodology/total-energies.md"
       - "Electronic structure": "methodology/electronic-structure.md"
-      - "Pseudopotentials": "methodology/pseudopotentials.md"
-      - "GGA+U": "methodology/gga-plus-u.md"
-      - "Elasticity": "methodology/elasticity.md"
       - "Elasticity prediction": "methodology/elasticity-prediction.md"
       - "Piezoelectricity": "methodology/piezoelectricity.md"
       - "Dielectricity": "methodology/dielectricity.md"
-      - "Equations of State": "methodology/equations-of-state.md"
       - "Phonons": "methodology/phonons.md"
-      - "Volume Change Error": methodology/volume-change-error.md
   - User Reference:
       - "Charge Neutrality": "user-guide/charge_neutrality.md"
       - "Electronegativity Balance": "user-guide/electronegativity-balance.md"
