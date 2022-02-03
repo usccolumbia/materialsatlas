@@ -8,50 +8,42 @@
 ### Background 
 
 Ionic conducctivity prediction has big potential in computational design for battery materials, which is, however, an extremely challenging problem due to the lack of sufficient ion conductivity datas and the complex relationships from structure to this property. There are a few attempts for this problem. The most notable one is [^7], in which the authors first search for
-materials satisfying several prerequisite requirements (i.e. other than ionic conductivity), and then utilize 40 experimental data samples to build a fast ionic conductivity classification model using 20 hand-crafted physical/structural descriptors (See below) and logistic regression classifer to look for the most likely superionic materials among these remaining candidates. Then used it for screening 12 000 candidates and billions of compositions [^8]. Another XGBoost model is develped in [^6] for ion conductivity prediction of perovskites. Trained with 7000 samples and a set of features including average ionic radius, minimum electronegativity, minimum atomic mass, minimum formation energy of oxides for all B-site, and B-site dopant ions of the perovskite as the crucial and relevant predictors for determining conductivity and the type of charge carriers. 
+materials satisfying several prerequisite requirements (i.e. other than ionic conductivity), and then utilize 40 experimental data samples to build a fast ionic conductivity classification model using 20 hand-crafted physical/structural descriptors (See below) and logistic regression classifer to look for the most likely superionic materials among these remaining candidates. Then used it for screening 12 000 candidates and billions of compositions [^8]. Another XGBoost model is develped in [^6] for ion conductivity prediction of perovskites. Trained with 7000 samples and a set of features including average ionic radius, minimum electronegativity, minimum atomic mass, minimum formation energy of oxides for all B-site, and B-site dopant ions of the perovskite as the crucial and relevant predictors for determining conductivity and the type of charge carriers. In [^3], Using primarily theoretical elemental feature descriptors derivable from tabulated information on the unit cell and the atomic properties of the components of a target compound on a limited dataset of 70 NASICON-examples, the authors  designed a logistic regression-based model capable of distinguishing between poor and good superionic conductors with a cross-validation accuracy of over 82%. Here the extremely limited ion conductivity data limits the application of powerful complex models such as graph neural networks. 
 
-<img src="img/ionic-features.png" width=400>
+<img src="../img/ionic-features.png" width=600>
 
 
 
 ### The Ionic conductivity Prediction Method
 
+In this app, we plan to implement two models including the the XGboost model for perovskite ion conductivity prediction and the logistic regression model for ionic conductivity of sodium and lithium-based SICON compounds. 
 
-### The compound prediction procedure
+We will also implement a composition based ion conductivity predictor using the Roost model. 
 
+### The ionic conductivity prediction procedure
 
+The process includes 2 stages, including feature extraction from structures and machine learning prediction. 
 
 ### Performance and Limitations
 
-### Using the Structure Predictor
+Due to the extremely small dataset, the prediction performance may only be good for the specific subset of materials such as perovskites. The models trained with 70 or 40 samples cannot generalize well out of their training domain. 
+
+### Using the Predictor
 
 #### Entering Inputs
 
 Practically, the procedure for getting predictions consists in 3 steps
 
-1. Pick elements: Select on the periodic table what constituent elements comprise the chemical space you are interested in.
-   For instance if you want to make predictions for battery materials based on Li, Mn and O, you should pick those three elements.
+1. Upload a cif structure file or a csv file or just input some formulas in the input text box.
 
-2. Pick oxidation states: The model uses the oxidation states to make predictions.
-   V<sup>3+</sup> does not substitute with the same elements as V<sup>5+</sup>, so if you want to study Mn<sup>3+</sup> compounds, you should pick +3 for Mn, +1 for Li (no other choices anyway) and -2 for O.
-   Sometimes you do not know what oxidation states you are interest in.
-   Let say you want all Li-Mn-O compounds regardless of the oxidation state of Mn.
-   Then, I would suggest running the model several times, one for Mn<sup>2+</sup>, one for Mn<sup>3+</sup>, and lastly one for Mn<sup>4+</sup>.
-   This should cover all the chemical space you are looking at.
+2. Start the prediction: click 'Predict Now' to begin the prediction.
+   
+4. Examine results: Upon completion of the task, you will be given a link to download the results. 
 
-3. Start the prediction: click 'Predict Structure' to begin the prediction.
-   Predictions are not immediately available and will require some time to complete.
-   You can monitor the status of your request in the [dashboard](https://materialsproject.org/dashboard).
-
-4. Examine results: Upon completion of the task, you will be given a link to a landing page providing details on the candidate structures.
-   We also provide cif files for the predicted compounds as well as VASP files ready to be run with standard parameters.
-   We do not provide any DFT results due our limited computational budget for the moment.
-   It is the responsibility of the user to run the predictions.
-   Also, as the pseudopotentials are proprietary in VASP (POTCARs) we do not provide those but a script is sent along that can be run to make sure the POTCARs are built from a directory containing all pseudopotentials.
 
 #### Interpreting the Results
 
-
+The users need to be cautious over the predicted results due to the uncertainy with the models trained with small dataset. 
 
 
 ### Future features
@@ -74,6 +66,7 @@ To cite the ion conductivity Predictor App, please reference the following works
 [^6] Priya, Pikee, and N. R. Aluru. "Accelerated design and discovery of perovskites with high conductivity for energy applications through machine learning." npj Computational Materials 7, no. 1 (2021): 1-12. https://www.nature.com/articles/s41524-021-00551-3?proof=t%2Btarget%253D#data-availability
 [^7]: Sendek, Austin D., Qian Yang, Ekin D. Cubuk, Karel-Alexander N. Duerloo, Yi Cui, and Evan J. Reed. "Holistic computational structure screening of more than 12000 candidates for solid lithium-ion conductor materials." Energy & Environmental Science 10, no. 1 (2017): 306-320.
 [^8]: Cubuk, Ekin D., Austin D. Sendek, and Evan J. Reed. "Screening billions of candidates for solid lithium-ion conductors: A transfer learning approach for small data." The Journal of chemical physics 150, no. 21 (2019): 214701.
+[^9]: 
 
 ### Authors
 
