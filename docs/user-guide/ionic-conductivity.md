@@ -1,14 +1,13 @@
 
 # Ionic Conductivity Predictor
-#### Dr. Hu
+
 
 
 ## Manual
 
-### Background on ionic conductdivity Prediction
+### Background 
 
-Crystal structure and compound prediction is an essential step of computational materials
-design.
+Ionic conducctivity prediction is an essential step of computational materials design for batteries. 
 
 
 ### The Ionic conductivity Prediction Method
