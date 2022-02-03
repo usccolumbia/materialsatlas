@@ -8,8 +8,7 @@ This is a place for all documentation relating to the
 - Foundations: concepts in materials and data science for materials discovery
 - Algorithms: key materials informatics algorithms
 - Case Studies: Examples of materials discovery using our web apps
-- Productivity: Using our web apps, application programming interface (API), and open source code.
-- Reproducibility: How we generate and validate our computed data sets
+- Tutorial: Using our web apps, application programming interface (API), and open source code.
 - Contribution: Developer guides and design specifications
 
 If you notice an error or omission, please post an [issue](https://github.com/materialsproject/docs/issues/new) or suggest an
