@@ -3,13 +3,12 @@
 
 
 This is a place for all documentation relating to the
-[MaterialsAtlas](http://materialsAtlas.org) (MA), encompassing:
+[MaterialsAtlas](http://materialsAtlas.org) (MA), including:
 
-- Foundation: concepts in materials and computer science we use to structure
-  and interpret our data sets
-- Methodology: how we generate and validate our computed data sets
+- Foundation: concepts in materials and computer science we use to interpret our data sets
+- Methodology: how the algorithms and models work with the data sets
 - User Guide: materials analysis and design using our data and tools
-- User Reference: Detailed help for using our website,
+- User Reference: Detailed help for using our web apps,
   application programming interface (API), and codebases.
 - Contribution: Developer guides and design specifications
 
