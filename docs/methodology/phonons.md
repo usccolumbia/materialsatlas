@@ -1,6 +1,6 @@
 # Phonons
 
-## Introduction
+## Introduction [^1]
 
 A phonon is a collective excitation of a set of atoms in condensed
 matter.
@@ -27,10 +27,7 @@ inorganic materials_, **Scientific Data**, 5, 180065 (2018).
 ## References
 
 [^1]:
-    Gonze, X. & Lee, C. Dynamical matrices, Born effective charges,
-    dielectric permittivity tensors, and interatomic force constants
-    from density functional perturbation theory. Phys. Rev. B 55,
-    10355–10368 (1997)
+    https://docs.materialsproject.org/methodology/phonons/
 
 [^2]:
     C. Lee & X. Gonze, Ab initio calculation of the thermodynamic
