@@ -35,7 +35,7 @@ Practically, the procedure for getting predictions consists in 5 steps
 
 The csv file contains all the calculated features along with the compositions.
 
-<img src="img/feature.png" width="700">
+<img src="../img/feature.png" width="700">
 
 
 ### Future features
