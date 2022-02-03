@@ -15,6 +15,7 @@ nav:
       - "Piezoelectricity": "methodology/piezoelectricity.md"
       - "Dielectricity": "methodology/dielectricity.md"
       - "Phonons": "methodology/phonons.md"
+      - "Graph neural networks": "methodology/gnn.md"
   - User Reference:
       - "Charge Neutrality": "user-guide/charge_neutrality.md"
       - "Electronegativity Balance": "user-guide/electronegativity-balance.md"
