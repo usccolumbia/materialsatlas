@@ -32,6 +32,7 @@ Practically, the procedure for getting predictions consists in 3 steps
 ### Citations
 
 To cite the Generator App, please reference the following works:
+
 - Okhotnikov, K., Charpentier, T., & Cadars, S. (2016). Supercell program: a combinatorial structure-generation approach for the local-level modeling of atomic substitutions and partial occupancies in crystals. Journal of Cheminformatics, 8(1), 17
 - Hu, Jianjun, Stanislav Stefanov, Yuqi Song, Sadman Sadeed Omee, Steph-Yves Louis, Edirisuriya Siriwardane, and Yong Zhao. "MaterialsAtlas. org: A Materials Informatics Web App Platform for Materials Discovery and Survey of State-of-the-Art." arXiv preprint arXiv:2109.04007 (2021).
 
