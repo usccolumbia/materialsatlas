@@ -67,7 +67,7 @@ To cite the ion conductivity Predictor App, please reference the following works
 [^3]: Xu, Yijie, Yun Zong, and Kedar Hippalgaonkar. "Machine learning-assisted cross-domain prediction of ionic conductivity in sodium and lithium-based superionic conductors using facile descriptors." Journal of Physics Communications 4, no. 5 (2020): 055015.
 [^4]: Zhao, Qian, Maxim Avdeev, Liquan Chen, and Siqi Shi. "Machine learning prediction of activation energy in cubic Li-argyrodites with hierarchically encoding crystal structure-based (HECS) descriptors." Science Bulletin (2021).
 [^5]: Shao, Hui, Jiansu Pu, Yanlin Zhu, Boyang Gao, Zhengguo Zhu, and Yunbo Rao. "Visual Analysis on Machine Learning Assisted Prediction of Ionic Conductivity for Solid-State Electrolytes." In 2021 IEEE 14th Pacific Visualization Symposium (PacificVis), pp. 1-5. IEEE, 2021.
-[^6] Priya, Pikee, and N. R. Aluru. "Accelerated design and discovery of perovskites with high conductivity for energy applications through machine learning." npj Computational Materials 7, no. 1 (2021): 1-12.
+[^6] Priya, Pikee, and N. R. Aluru. "Accelerated design and discovery of perovskites with high conductivity for energy applications through machine learning." npj Computational Materials 7, no. 1 (2021): 1-12. https://www.nature.com/articles/s41524-021-00551-3?proof=t%2Btarget%253D#data-availability
 
 ### Authors
 
