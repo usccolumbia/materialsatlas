@@ -15,7 +15,7 @@ Our composition-based model is trained using the Magpie descriptors from the Mat
 
 ### Structure-based formation energy prediction Model
 
-Our structure based formation energy prediction model is based on our latest work of DeeperGATGNN algorithm [^6], which is a scalable deep graph neural network model with the state-of-the-art performance for structure based materials property prediction.
+Our structure based formation energy prediction model is based on our latest work of CGCNN algorithm [^6], which is a deep graph neural network model for structure based materials property prediction.
 
 ### Using the Formation Energy Predictor
 
@@ -45,6 +45,10 @@ If there is no output, usually it means the materials may cannot be decomposed i
 
 One must be aware that the E-above-hull calculation is very sensitive to the calculated total energy values which again strongly depends on the parameters used in DFT simulation. So to use this app, one must make sure you use the same DFT calculation setting as MaterialsProject. Check details here [^10].
 
+### Future feature
+
+We are planning to upgrade the structure based formation energy prediction model to our DeeperGATGNN model which has the SOTA performance.
+
 ### Citations
 
 [^1]: Mao, Y., Yang, H, Sheng, Y., Wang, J., Ouyang, R., Ye, C., Yang, J. and Zhang, W. Prediction and Classification of Formation Energies of Binary Compounds by Machine Learning: An Approach without Crystal Structure Information, ACS Omega, 2021 6 (22), 14533-14541, DOI: 10.1021/acsomega.1c01517 
@@ -58,7 +62,7 @@ K., Snyder, G. J., Foster, I., Jain, A., Matminer: An open source toolkit for ma
 
 [^5]: Goodall, R.E.A., Lee, A.A. Predicting materials properties without crystal structure: deep representation learning from stoichiometry. Nat Commun 11, 6280 (2020). https://doi.org/10.1038/s41467-020-19964-7
 
-[^6]: Omee, Sadman Sadeed, Steph-Yves Louis, Nihang Fu, Lai Wei, Sourin Dey, Rongzhi Dong, Qinyang Li, and Jianjun Hu. "Scalable deeper graph neural networks for high-performance materials property prediction." arXiv preprint arXiv:2109.12283 (2021).
+[^6]: Xie, Tian, and Jeffrey C. Grossman. "Crystal graph convolutional neural networks for an accurate and interpretable prediction of material properties." Physical review letters 120, no. 14 (2018): 145301.
 
 [^7]: Ong, S. P.; Wang, L.; Kang, B.; Ceder, G. Li−Fe−P−O2 Phase Diagram from First Principles Calculations, Chem. Mater., 2008, 20, 1798–1807, doi:10.1021/cm702327g.
 
