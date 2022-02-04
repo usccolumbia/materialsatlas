@@ -40,9 +40,9 @@ Young's Mod - 76.8 <br>
 Poisson Ratio - 8.7 
 
 The MAE of our structure ML model on the hold-out test set is - <br>
-Bulk Mod - 13.4268 <br>
-Shear Mod - 15.2374 <br>
-Young's Mod - 55.335 <br>
+Bulk Mod - 13.4268 GPa <br>
+Shear Mod - 15.2374 GPa <br>
+Young's Mod - 55.335 GPa <br>
 Poisson Ratio - 0.0962
 
 ### Using the Elastic Moduli Predictor
