@@ -22,6 +22,8 @@ Table3: Space group prediction performance
 
 <img src="../img/Space_group_table3.png" width=800>
 
+Currently, we have only implemented the cubic crystal system option for space group prediction. Other options will be added soon.
+
 ### Using the Predictor
 
 #### Entering Inputs
