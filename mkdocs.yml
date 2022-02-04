@@ -5,7 +5,7 @@ site_url: https://docs.materialsatlas.org
 
 repo_name: "materialsatlas/docs"
 repo_url: "https://github.com/usccolumbia/materialsatlas/docs"
-
+edit_uri: "./edit/main/docs"
 nav:
   - Home: "index.md"
   #- Foundation: "foundation.md"
