@@ -57,6 +57,8 @@ _Figure 3: Procedure for proposing new compound candidates in a quaternary syste
 
 ### Performance and Limitations
 
+Some of the Pauling rule check may better be checked with different configuration parameters. It's then better to use the original code and tune those parameters. We suggest users to visit their original source code at [^4]
+
 ### Using the Pauling's Rule Check Tool
 
 #### Entering Inputs
@@ -67,26 +69,18 @@ Practically, the procedure for getting predictions consists in 3 steps
 
 2. Start the prediction: click 'Check Now' to begin the validation process.
    
-3. Examine results: Upon completion of the task, you will be given a link to download the results.
+3. Examine results: Upon completion of the task, you will be given a link to download the results for composition based check or it will show what Pauling rules have been passed for the query structure. 
+
 
 #### Interpreting the Results
 
-The web app will return pass or no-pass for the input formula or structure. 
+The web app will return pass or no-pass for the input formula or report which Pauling's rules have passed for the query  structure. 
 
 
 ### Future features
 
 TBD
 
-<!-- In the future, we want to give the user the option to perform substitution of several ions for one ion in a starting structure.
-For instance, if one is interested in ternary oxychlorides (M, O<sup>2-</sup>, Cl<sup>1-</sup>) there will be only few ternary compounds that will be good candidates for a substitution generating oxychlorides (e.g., oxybromides).
-A strategy to increase the pool of possible structure is to allow substitution of one ion by O<sup>2-</sup> and Cl<sup>-</sup>.
-For instance, we would start with an oxide and substitute the O<sup>2-</sup> by a mixture of O<sup>2-</sup> and Cl<sup>-</sup>.
-The amount of O and Cl will be set to achieve charge balance and a simple model (electrostatics or other) could be used to pick an ordering of the two substituted species.
-
-The only data mined model accessible now is the substitution predictor.
-We have developed another model based on correlations between crystal structures at different compositions.[^3][^4] We plan to give access to this model in the future.
-The two models are complimentary: the model based on correlations between structure is more efficient in data rich regions (e.g., ternary oxides) while the ionic substitution model is more efficient in data sparse regions (e.g., quaternaries). -->
 
 ### Citations
 
